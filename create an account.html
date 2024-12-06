@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>BMTC-Project</title>
+</head>
+
+<body>
+  <!-- Aside section start-->
+  <div class="aside-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 aside-bg">
+          <a href="#" class="aside-heading">BookMyTestCenter</a>
+          <div class="aside-tag-wrapper">
+            <div class="aside-tag-cnt">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/icon1-grey.png" alt="user-icon-white" class="user-white" />
+                <img src="./icon-folder/aside-icon/Active1-white.png" alt="user-icon-grey" class="user-grey" />
+              </div>
+              <div>
+                <h3 class="m-0">Your details</h3>
+                <p class="m-0">Enter your full name, email & phone no.</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/icon-right-grey.png" alt="circleRight" class="user-grey" />
+                <img src="./icon-folder/aside-icon/icon-right-white.png" alt="circleRight" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Verify your phone number</h3>
+                <p class="m-0">Enter the OTP sent on your phone number</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/Mpin-grey-icon.png" alt="Mpin" class="user-grey" />
+                <img src="./icon-folder/aside-icon/Mpin-white-icon.png" alt="Mpin" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Choose your M-PIN</h3>
+                <p class="m-0">Enter your M-PIN for easy access.</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/compDetails-grey.png" alt="comp" class="user-grey" />
+                <img src="./icon-folder/aside-icon/compDatils-white.png" alt="comp" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Enter your company details</h3>
+                <p class="m-0">Add the required company information.</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/welcom-grey.png" alt="welcom" class="user-grey" />
+                <img src="./icon-folder/aside-icon/welcom-white.png" alt="welcom" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Welcome to BookMyTestCenter</h3>
+                <p class="m-0">Get started right away.</p>
+              </div>
+            </div>
+          </div>
+          <p class="company-year">@2016 | Testpan India Private Limited</p>
+        </div>
+        <div class="col-8">
+          <div class='needHelpWrapper'><a href='/'>Need help?</a></div>
+          <div class="create-account-cnt">
+            <!-- /////////////////login part//////////////// -->
+            <!-- <form class="form-cnt">
+              <div class="form-heading">
+                <div class="commom-header-icon">
+                  <span class="icon-box-form"><img src="./icon-folder/aside-icon/login-page-icon.png" alt="" /></span>
+                </div>
+                <h1 class="mt-3">Create an account</h1>
+                <p>Provide your full name, email and phone number</p>
+              </div>
+              <div class="form-input-cnt">
+                <p>
+                  <label htmlFor="">First name*</label><br />
+                  <span class="input-icon-person">
+                    <img src="./icon-folder/aside-icon/user-name-login.png" alt="" />
+                  </span>
+                  <input type="text" />
+                </p>
+                <p>
+                  <label htmlFor="">Email*</label><br />
+                  <span class="input-icon-at">
+                    <img src="./icon-folder/aside-icon/user-email-login.png" alt="" />
+                  </span>
+                  <input type="email" />
+                </p>
+                <p>
+                  <label htmlFor="">Phone number*</label><br />
+                  <span class="input-icon-flag"><img src="./icon-folder/aside-icon/user-number-login.png"
+                      alt="flag" /></span>
+                  <input type="number" />
+                </p>
+              </div>
+              <div class="form-footer">
+                <p class="checkbox-cnt">
+                  <input type="checkbox" />
+                  <label htmlFor="">I agree to the
+                    <span class="privacy-policy">Terms & Service & Privacy Policy</span></label><br />
+                </p>
+                <button type="button" class="proceed-btn">Prossed <img src="./icon-folder/aside-icon/Arrow 3.png"
+                    alt=""></button>
+                <p class="login-text">
+                  Already have an account?<a href="/">Log in</a>
+                </p>
+              </div>
+            </form> -->
+            <!-- ////////////// OTP section ////////////////////  -->
+            <!-- <form class="form-otp-cnt">
+              <div class="form-heading">
+                <div class='commom-header-icon'><span class='icon-box-form'><img
+                      src="./icon-folder/aside-icon/otp-head-icon.png" alt="" /></span></div>
+                <h1 class='mt-3'>Verify your phone number, Mahesh</h1>
+                <p>We sent a 6 digit OTP to 9922345678</p>
+              </div>
+              <div class='form-input-otp-cnt'>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+              <div class="form-footer">
+                <p class='login-text'>Didn’t get a code?<a href="/">Resend</a></p>
+                <button class='proceed-btn'>proceed <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+                <p class='login-text'>Incorrect phone number?<a href="/">Change</a></p>
+              </div>
+            </form> -->
+            <!-- /////////////// M-Pin section/////////////////////////////// -->
+            <!-- <form class="form-otp-cnt">
+              <div class="form-heading">
+                <div class='commom-header-icon'><img src="./icon-folder/aside-icon/M-pin-header-icon.png" alt=""></div>
+                <h1 class='mt-3'>Setup your 4 digit M-PIN</h1>
+                <p>The M-Pin will be used for logging in in the future</p>
+              </div>
+              <div class='form-input-mpin-cnt'>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+              <div class="form-footer">
+                <button class='proceed-btn mt-3'>proceed <img src="./icon-folder/aside-icon/Arrow 3.png"
+                    alt=""></button>
+              </div>
+            </form> -->
+            <!-- ///////////////// Company Details section first //////////////////////// -->
+            <!-- <div class="w-100">
+              <div class="form-heading">
+                <div class='commom-header-icon'><img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                <h1 class='mt-3'>Enter company details</h1>
+                <p>Add the required company information</p>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="">
+                </div>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/contact-detils-icon.png" alt="">
+                </div>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="">
+                </div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <p class='first-comp'>01: Company details</p>
+                </div>
+                <div class='col-4'>
+                  <p>02: Point of Contact details</p>
+                </div>
+                <div class='col-4'>
+                  <p>03: Bank details & documents</p>
+                </div>
+              </div>
+              <div class="comp-basic-details">
+                <p>Basic details</p>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Company Name</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Company type</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Company website</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+              </div>
+              <div class='location details pt-4'>
+                <p>Location details</p>
+                <div class='row py-2'>
+                  <div class="col-6">
+                    <label htmlFor="">Which Country is the company based in</label>
+                  </div>
+                  <div class="col-6">
+                    <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                      <option value="option1">India</option>
+                      <option value="option2">Chaina</option>
+                      <option value="option3">America</option>
+                    </select>
+                  </div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6">
+                    <label htmlFor="">Pincode</label>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class='w-100 rounded input-bg px-2 py-1' />
+                  </div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6">
+                    <label htmlFor="">state</label>
+                  </div>
+                  <div class="col-6">
+                    <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                      <option value="option1">India</option>
+                      <option value="option2">Chaina</option>
+                      <option value="option3">America</option>
+                    </select>
+                  </div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6">
+                    <label htmlFor="">city</label>
+                  </div>
+                  <div class="col-6 ">
+                    <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                      <option value="option1">India</option>
+                      <option value="option2">Chaina</option>
+                      <option value="option3">America</option>
+                    </select>
+                  </div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6">
+                    <label htmlFor="">Company Address</label>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class='w-100 rounded input-bg px-2 py-1' />
+                  </div>
+                </div>
+
+              </div>
+              <div class='comp-details-btn-cnt'>
+                <button class='proceed-btn'>Next <img src="./icon-folder/aside-icon/Arrow 3.png"
+                    alt="right-qrrow"></button>
+              </div>
+            </div> -->
+            <!-- //////////////////////////// Company Details section second ////////////////  -->
+            <!-- <div>
+              <div class="form-heading">
+                <div class='commom-header-icon'><img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                <h1 class='mt-3'>Enter company details</h1>
+                <p>Add the required company information</p>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <span><img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="icon1" /></span>
+                </div>
+                <div class='col-4'>
+                  <span><img src="./icon-folder/aside-icon/contact-detials-color-icon.png" alt="icon2" /></span>
+                </div>
+                <div class='col-4'>
+                  <span><img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="icon3" /></span>
+                </div>
+              </div>
+              <div class="progress my-2">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <p class='first-comp'>01: Company details</p>
+                </div>
+                <div class='col-4'>
+                  <p class='first-comp'>02: Point of Contact details</p>
+                </div>
+                <div class='col-4'>
+                  <p>03: Bank details & documents</p>
+                </div>
+              </div>
+              <div class="comp-basic-details">
+                <p>Basic details</p>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Name of the Co-ordinator</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Email</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Mobile number</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Alternate mobile number</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Landline number</label></div>
+                  <div class="col-6 d-flex">
+                    <div class='w-25'>
+                      <input type="text" class='w-100 rounded input-bg py-1' />
+                    </div>
+                    <div class='w-50 mx-2'>
+                      <input type="text" class='w-100 rounded input-bg py-1' />
+                    </div>
+                    <div class='w-25'>
+                      <input type="text" class='w-100 rounded input-bg py-1' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class='comp-details-btn-cnt'>
+                <button class='Go-back-btn'>Go back</button>
+                <button class='proceed-btn'>Next <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+              </div>
+            </div> -->
+            <!--/////////////////////////////// Bank detials section ///////////////////////-->
+            <!-- <div class="w-100">
+              <div class="form-heading">
+                <div class='commom-header-icon'> <img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                <h1 class='mt-3'>Enter company details</h1>
+                <p>Add the required company information</p>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="">
+                </div>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/contact-detials-color-icon.png" alt="">
+                </div>
+                <div class='col-4'>
+                  <img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="">
+                </div>
+              </div>
+              <div class="progress  my-2">
+                <div class="progress-bar w-60" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <div class='row'>
+                <div class='col-4'>
+                  <p class='first-comp'>01: Company details</p>
+                </div>
+                <div class='col-4'>
+                  <p class='first-comp'>02: Point of Contact details</p>
+                </div>
+                <div class='col-4'>
+                  <p>03: Bank details & documents</p>
+                </div>
+              </div>
+              <div class="comp-basic-details">
+                <p>Bank details</p>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Enter bank name</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Account number</label></div>
+                  <div class="col-6"><input type="number" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">IFSC code</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">Beneficiary name</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">PAN number</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2'>
+                  <div class="col-6"><label htmlFor="">GST number</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+              </div>
+              <div class="upload-documents">
+                <p class='pt-5'>Upload documents</p>
+                <div class='row py-2 align-items-start'>
+                  <div class="col-6"><label htmlFor="">Enter bank name</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+                <div class='row py-2 align-items-center'>
+                  <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                  <div class="col-6">
+                    <div class='bank-fileUpload-cnt'>
+                      <div>
+                        <label htmlFor="file-input" class="custom-file-label">
+                          <img src={fileChooses} alt="Upload Logo" />
+                          Choose File
+                        </label>
+                        <input type="file" id="file-input" />
+                      </div>
+                      <div class='devider-line'></div>
+                      <div>
+                        <p>Max file size: 2 MB</p>
+                        <p>File type: doc, docx, pdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='row py-2 align-items-center'>
+                  <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                  <div class="col-6">
+                    <div class='bank-fileUpload-cnt'>
+                      <div>
+                        <label htmlFor="file-input" class="custom-file-label">
+                          <img src={fileChooses} alt="Upload Logo" />
+                          Choose File
+                        </label>
+                        <input type="file" id="file-input" />
+                      </div>
+                      <div class='devider-line'></div>
+                      <div>
+                        <p>Max file size: 2 MB</p>
+                        <p>File type: doc, docx, pdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='row py-2 align-items-center'>
+                  <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                  <div class="col-6">
+                    <div class='bank-fileUpload-cnt'>
+                      <div>
+                        <label htmlFor="file-input" class="custom-file-label">
+                          <img src={fileChooses} alt="Upload Logo" />
+                          Choose File
+                        </label>
+                        <input type="file" id="file-input" />
+                      </div>
+                      <div class='devider-line'></div>
+                      <div>
+                        <p>Max file size: 2 MB</p>
+                        <p>File type: doc, docx, pdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='row py-2 align-items-center'>
+                  <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                  <div class="col-6">
+                    <div class='bank-fileUpload-cnt'>
+                      <div>
+                        <label htmlFor="file-input" class="custom-file-label">
+                          <img src={fileChooses} alt="Upload Logo" />
+                          Choose File
+                        </label>
+                        <input type="file" id="file-input" />
+                      </div>
+                      <div class='devider-line'></div>
+                      <div>
+                        <p>Max file size: 2 MB</p>
+                        <p>File type: doc, docx, pdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='row py-2 align-items-center'>
+                  <div class="col-6"><label htmlFor="">Upload Udyam Certificate</label></div>
+                  <div class="col-6">
+                    <div class='bank-fileUpload-cnt'>
+                      <div>
+                        <label htmlFor="file-input" class="custom-file-label">
+                          <img src={fileChooses} alt="Upload Logo" />
+                          Choose File
+                        </label>
+                        <input type="file" id="file-input" />
+                      </div>
+                      <div class='devider-line'></div>
+                      <div>
+                        <p>Max file size: 2 MB</p>
+                        <p>File type: doc, docx, pdf</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='row py-2 align-items-start'>
+                  <div class="col-6"><label htmlFor="">Enter Udyam Aadhar number</label></div>
+                  <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                </div>
+              </div>
+              <div class='comp-details-btn-cnt'>
+                <button class='Go-back-btn'>Go back</button>
+                <button class='proceed-btn'>Submit <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+              </div>
+            </div> -->
+            <!--////////////////////////////// Good to go section ////////////////////////////-->
+            <form class="form-otp-cnt">
+              <div class="form-heading">
+                  <div class='commom-header-icon'><img src="./icon-folder/aside-icon/good to go icon.png" alt=""></div>
+                  <h1 class='mt-3'>Welcome to BookMyTestCenter</h1>
+                  <p>You are good to go!</p>
+              </div>
+              <div class='form-input-mpin-cnt'>
+                  <div class="video-container">
+                      <video class="object-fit-cover" autoPlay muted loop>
+                          <source src="./video/video1.mp4" type="video/mp4" />
+                      </video>
+                      <div class="play-icon"></div>
+                  </div>
+              </div>
+              <div class="finish-btn-cnt">
+                  <button class='finish-btn'><img src="./icon-folder/aside-icon/Finish up 🚀.png" alt=""></button>
+              </div>
+          </form>
+          </div>
+          <div class="indicatorCnt">
+            <ul class="indicatorWrapper">
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aside section end-->
+
+  <!--js link here -->
+  <script src="./js/script.js"></script>
+
+  <!-- bootstrap script link here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
