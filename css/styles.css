@@ -63,27 +63,15 @@ label {
   margin-bottom: 24px;
   position: relative;
 }
-
-.aside-tag-cnt.active .icon-box {
-  background-color: #2a75ae;
-}
-
-.aside-tag-cnt.active .icon-box .user-grey {
+.user-white{
   display: none;
 }
-
-.aside-tag-cnt.active .icon-box .user-white {
+.aside-tag-cnt.active .user-white{
   display: block;
 }
-
-.aside-tag-cnt .icon-box .user-grey {
-  display: block;
-}
-
-.aside-tag-cnt .icon-box .user-white {
+.aside-tag-cnt.active .user-grey{
   display: none;
 }
-
 .aside-tag-cnt.active h3 {
   color: #000000;
 }
@@ -144,7 +132,12 @@ label {
 .form-cnt {
   max-width: 400px;
 }
-
+.tab-content, .company-contetnt{
+  display: none;
+}
+.tab-content.show, .company-contetnt.show{
+  display: block;
+}
 .icon-box-form {
   width: 50px;
   height: 50px;
@@ -252,7 +245,6 @@ label {
   flex: 1;
   display: flex;
   justify-content: end;
-  padding-top: 32px;
 }
 
 .needHelpWrapper a {
@@ -269,12 +261,35 @@ label {
   font-weight: 600;
 }
 
-.indicatorCnt ul {
+/* indicator css start */
+.indicatorWrapper {
   display: flex;
-  max-width: 100px;
-  margin: auto;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 6px;
+  margin: 0 auto;
+  list-style: none;
+  width: max-content;
 }
+
+.indicatorItem {
+  width: 12px;
+  height: 12px;
+  background-color: #E8E8E8;
+  border-radius: 100%;
+  transition: 0.5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+}
+
+.indicatorItem.active {
+  width: 72px;
+  border-radius: 10px;
+  background-color: #2A75AE;
+}
+
+/*  indicator css start end*/
 
 /* responsive for login and aside section */
 @media (max-width: 576px) {
@@ -460,6 +475,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 32px;
 }
 
 .needHelpWrapper {
@@ -511,6 +527,7 @@ label {
 .form-input-otp-cnt :last-child {
   margin-right: 0;
 }
+
 /* ///////////////////////////////////// OTP section style end //////////////////////////////// */
 
 
@@ -536,10 +553,12 @@ label {
   display: flex;
   justify-content: space-between;
 }
-.progress{
+
+.progress {
   height: 10px;
 }
-.progress-bar{
+
+.progress-bar {
   width: 1px;
 }
 
@@ -605,6 +624,7 @@ label {
   color: #2A75AE;
   font-weight: 700;
 }
+
 /* ///////////////////////////////conpany detials section second style end ////////////////////*/
 
 
@@ -650,6 +670,7 @@ input[type="file"] {
   background-color: #000000;
 
 }
+
 /* ////////////////////////////// Bank detials section style end//////////////////////////////////////*/
 
 
@@ -771,12 +792,12 @@ input[type="file"] {
   display: none;
 }
 
-.project-aside ul li a.active {
+.project-aside ul li.active a {
   background-color: #2A75AE;
   color: #fff;
 }
 
-.project-aside ul li a.active .black-radio {
+.project-aside ul li.active a .black-radio {
   display: none;
 }
 
@@ -784,7 +805,7 @@ input[type="file"] {
   display: none;
 }
 
-.project-aside ul li a.active .white-radio {
+.project-aside ul li.active a .white-radio {
   display: block;
 }
 
@@ -846,6 +867,12 @@ input[type="file"] {
 
 
 /* Myproject Navbar notification style start */
+.tablecalenderContent, .createProjectSection, .projectTableContent, .createProjectForm{
+  display: none;
+}
+.tablecalenderContent.show, .createProjectSection.show, .projectTableContent.show, .createProjectForm.show{
+  display: block;
+}
 .notification-navbar {
   display: flex;
   justify-content: space-between;
@@ -937,6 +964,7 @@ input[type="file"] {
   border-radius: 20px;
   outline: none;
 }
+
 /*/////////////////////////////////// Numarical information section style end ///////////////////////////*/
 
 
@@ -1009,7 +1037,7 @@ input[type="file"] {
   font-weight: 700;
 }
 
-/* /////////////////////////////Create-Project-Btn-Section style end ///////////////////// */
+/* ///////////////////////////// Create-Project-Btn-Section style end ///////////////////// */
 
 
 /*//////////////////////////// table style start here///////////////////////////////// */
@@ -1158,9 +1186,183 @@ th {
 /* /////////////////////////////////////table style end here //////////////////////////*/
 
 
+/* ////////////////////////// create project infobar style start ///////////////////////*/
+.active-img-cnt {
+  position: relative;
+}
+
+.conect-line::after {
+  content: "";
+  display: block;
+  width: 51%;
+  height: 2px;
+  background-color: #DFDFDF;
+  margin: 10px auto;
+  position: absolute;
+  top: 10px;
+  left: 51%;
+}
+
+.inactive-img-cnt {
+  position: relative;
+}
+
+.inactive-img-line::after {
+  content: "";
+  display: block;
+  width: 34%;
+  height: 2px;
+  background-color: #DFDFDF;
+  margin: 10px auto;
+  position: absolute;
+  top: 10px;
+  left: 68%;
+}
+
+/* //////////////////////////////////create project infobar style end /////////////////////// */
+
+/*/////////////////////////// first info detials section style start///////////////////////  */
+.main-projectDetials-enter-cnt {
+  background-color: #F9FAFB;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+.project-Detials-btn-cnt {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.project-Detials-btn-cnt .cancel-btn {
+  width: 141px;
+  padding: 10px;
+  border: 1px solid #2A75AE;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.project-Detials-btn-cnt .Next-btn {
+  width: 225px;
+  padding: 10px;
+  background: #2A75AE;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
 
 
+}
+
+/*/////////////////////////// first info detials section style end///////////////////////  */
+
+/*/////////////////////////// Enter Amenity requirements style start /////////////////////*/
+.main-wrapper-section {
+  background-color: #F9FAFB;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.go-back-next-btn-cnt .go-back-btn {
+  width: 141px;
+  padding: 10px;
+  border: 1px solid #2A75AE;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #2A75AE;
+  font-size: 16px;
+  font-weight: 700;
+}
+.go-back-next-btn-cnt .go-back-btn {
+  width: 141px;
+  padding: 10px;
+  border: 1px solid #2A75AE;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #2A75AE;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.go-back-next-btn-cnt .next-btn {
+  width: 255px;
+  border: 1px solid #2A75AE;
+  background: #2A75AE;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+
+}
+
+/* ///////////////////////////////////Enter Amenity requirements style end ///////////////////////*/
 
 
+/* ///////////////////////////////// My Calendar style start ////////////////////////////////*/
+.calender-tab-btn-cnt {
+  width: 350px;
+}
+
+.upcoming-btn {
+  padding: 10px 16px;
+  background-color: #2A75AE;
+  color: #fff;
+}
+
+.rounded-left {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.border-right {
+  border-right: 1px solid #DFDFDF;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.booked-btn {
+  padding: 2px 16px;
+  border-radius: 7px;
+  background: #CAFFBD;
+  color: #000000;
+  margin: 0px 16px;
+  border: none;
+  text-align: center;
+
+}
+
+.panding-calender-btn {
+  padding: 2px 16px;
+  border-radius: 7px;
+  background: #FEFFBD;
+  color: #000000;
+  border: none;
+  text-align: center;
+}
+
+/* ///////////////////////////////////My Calendar style end ///////////////////////////////*/
 
 
+/* pop-up section style start */
+.main-share-cnt {
+  max-width: 460px;
+  box-shadow: -4px 0px 40px 0px #A29F9F3D;
+
+}
+
+.share-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 30px;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+/* pop-up section style end */
