@@ -2,1666 +2,565 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>create project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>BMTC-Project</title>
 </head>
 
 <body>
-    <div class="create-project-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2 p-0">
-                    <div class="project-aside ">
-                        <div class="pt-5 px-4 pb-2">
-                            <a href="./create an account.html" class="bookmytestcenter-heading">
-                                BookMyTestCenter
-                            </a>
-                        </div>
-
-                        <!-- <hr /> -->
-                        <div class="px-4 py-2 main">
-                            <!-- <p>GENERAL</p> -->
-                            <ul>
-                                <li class="tablecalenderTab active">
-                                    <a href="#">
-                                        <img src="./icon-folder/project-icons/radio_button_checked_white.png"
-                                            alt="radio" class="white-radio" />
-                                        <img src="./icon-folder/project-icons/radio_button_checked_grey.png" alt="radio"
-                                            class="black-radio" />
-                                        <span>Projects</span>
-                                    </a>
-                                    <p class="createProject" id="createProject">
-                                        <img src="./icon-folder/project-icons/radio_button_checked_white.png"
-                                            alt="radio" class="white-radio me-2" />
-                                        <span>Create Project</span>
-                                    </p>
-                                </li>
-                                <li class="tablecalenderTab">
-                                    <a href="#">
-                                        <img src="./icon-folder/project-icons/Calendar_grey.png" alt="radio"
-                                            class="black-radio" />
-                                        <img src="icon-folder/project-icons/Calendar_white.png" alt="radio"
-                                            class="white-radio" />
-                                        <span>Calendar</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <hr />
-                        <div class="px-4 py-2">
-                            <!-- <p>SUPPORT</p> -->
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="./icon-folder/project-icons/settings.png" alt="radio" />
-                                        Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./icon-folder/project-icons/Help circle.png" alt="radio" />
-                                        Help & Support
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="aside-footer-cnt">
-                            <div class="aside-buttom-btn">
-                                <div class="aside-img-cnt">
-                                    <img src="./icon-folder/project-icons/project_aside-btn-icon.png" alt="aside-btn" />
-                                </div>
-                                <div class="lttv-cnt">
-                                    <h3 class="m-0">LTTV Group</h3>
-                                    <p class="m-0">msharma@lttv.com</p>
-                                </div>
-                                <div class="footer-circle-cnt">
-                                    <img src="./icon-folder/project-icons/project_aside _btn_circle.png" alt="" />
-                                </div>
-                            </div>
-                            <hr class="line-brake-bottom" />
-                            <p class="">@2016 | Testpan India Private Limited</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 px-4">
-                    <div class="tablecalenderContent show">
-                        <div class="project-pages-section">
-                            <!-- top project-create- navbar section -->
-                            <div class='notification-navbar'>
-                                <h2 class='m-0 fs-4'>My Project</h2>
-                                <div>
-                                    <button><img src="./icon-folder/project-icons/notifications.png" alt=""
-                                            class='me-2' />Notification <span class='ms-2'>11</span></button>
-                                    <button class='create-project-btn createProjectBtn'><img src="./icon-folder/project-icons/Plus.png"
-                                            alt="">Create Project</button>
-                                </div>
-                            </div>
-                            <hr>
-                            <!-- Numerical card section  -->
-                            <div class="row">
-                                <div class="col-4 ">
-                                    <div class='d-flex numerical-box1'>
-                                        <div class='numerical-img-cnt'>
-                                            <img src="./icon-folder/project-icons/total-project-icon.png"
-                                                alt="total-project" />
-                                        </div>
-                                        <div class='Numerical-text-cnt'>
-                                            <p>Total Projects</p>
-                                            <h2>138 <span><i class="bi bi-arrow-up-short"></i>13%</span></h2>
-                                        </div>
-                                        <div class='numerical-opption-btn'>
-                                            <select>
-                                                <option value="">1y</option>
-                                                <option value="">2y</option>
-                                                <option value="">3y</option>
-                                                <option value="">4y</option>
-                                                <option value="">5y</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 ">
-                                    <div class='d-flex numerical-box1'>
-                                        <div class='numerical-img-cnt'>
-                                            <img src="./icon-folder/project-icons/assessed condidates.png"
-                                                alt="assessed-condidates" />
-                                        </div>
-                                        <div class='Numerical-text-cnt'>
-                                            <p>Assessed Condidates</p>
-                                            <h2>689k <span><i class="bi bi-arrow-up-short"></i>21%</span></h2>
-                                        </div>
-                                        <div class='numerical-opption-btn'>
-                                            <select>
-                                                <option value="">1y</option>
-                                                <option value="">2y</option>
-                                                <option value="">3y</option>
-                                                <option value="">4y</option>
-                                                <option value="">5y</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 ">
-                                    <div class='d-flex numerical-box1'>
-                                        <div class='numerical-img-cnt'>
-                                            <img src="./icon-folder/project-icons/cities icon.png"
-                                                alt="total-project" />
-                                        </div>
-                                        <div class='Numerical-text-cnt'>
-                                            <p>Cities Covered</p>
-                                            <h2>34 <span><i class="bi bi-arrow-up-short"></i>19%</span></h2>
-                                        </div>
-                                        <div class='numerical-opption-btn'>
-                                            <select>
-                                                <option value="">1y</option>
-                                                <option value="">2y</option>
-                                                <option value="">3y</option>
-                                                <option value="">4y</option>
-                                                <option value="">5y</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- tab change and project-create-btn section -->
-                            <div class="row align-items-center">
-                                <div class="col-8 py-4">
-                                    <div class='project-create-cnt'>
-                                        <ul>
-                                            <li><a href="#" class="allProjectTabBtn all-project-tab">All <span>38</span></a></li>
-                                            <li><a href="#" class="allProjectTabBtn">Pending</a></li>
-                                            <li><a href="#" class="allProjectTabBtn">Completed</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-4 py-4 projectCreate-btn-cnt">
-                                    <button class='create-project-btn createProjectBtn'><img src="./icon-folder/project-icons/Plus.png"
-                                            alt="">Create
-                                        Project</button>
-                                </div>
-                            </div>
-                            <!-- Table section -->
-                            <div class="all-table-cnt">
-                                <div class="tableCnt">
-                                    <div class='tableHeading'>
-                                        <div class='exam-name-input-cnt'>
-                                            <img src="./icon-folder/project-icons/search.png" alt="" />
-                                            <input type='text' placeholder='Enter exam name..' />
-                                        </div>
-                                        <div class='filter-download-cnt'>
-                                            <select>
-                                                <option value="">Filter By</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                            </select>
-                                            <select>
-                                                <option value="">Sort By</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                            </select>
-                                            <button>Export <img src="./icon-folder/project-icons/Download.png"
-                                                    alt="download" /></button>
-                                        </div>
-                                    </div>
-                                    <!-- All table -->
-                                    <div class="projectTableContent show">
-                                        <table class="mytable">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"><input type="checkbox" class='me-2' />Project name</th>
-                                                    <th scope="col">Creation date</th>
-                                                    <th scope="col">Seats</th>
-                                                    <th scope="col">Exam date</th>
-                                                    <th scope="col">City</th>
-                                                    <th scope="col">Centers</th>
-                                                    <th scope="col">Project status</th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='compelet-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-green-circle.png"
-                                                                alt="table-Icon" />Completed</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='compelet-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-green-circle.png"
-                                                                alt="table-Icon" />Completed</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='compelet-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-green-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='compelet-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-green-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='compelet-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-green-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="icon-folder/project-icons/aside circle.png" alt="" /></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- pending table -->
-                                    <div class="projectTableContent">
-                                        <table class="mytable">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"><input type="checkbox" class='me-2' />Project name</th>
-                                                    <th scope="col">Creation date</th>
-                                                    <th scope="col">Seats</th>
-                                                    <th scope="col">Exam date</th>
-                                                    <th scope="col">City</th>
-                                                    <th scope="col">Centers</th>
-                                                    <th scope="col">Project status</th>
-                                                    <th scope="col"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><a href="#"><input type="checkbox" class='me-2' />IIM
-                                                            Entrance</a></th>
-                                                    <td>Oct 14,2024</td>
-                                                    <td>12000</td>
-                                                    <td>Nov 11-14th</td>
-                                                    <td>Delhi</td>
-                                                    <td>92</td>
-                                                    <td>
-                                                        <a href="#" class='panding-btn'><img
-                                                                src="./icon-folder/project-icons/table-icon-yellow-circle.png"
-                                                                alt="table-Icon" />Pending</a>
-                                                    </td>
-                                                    <td><img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- complete table -->
-                                    <div class="projectTableContent">
-                                        <p>Complete Table</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="createProjectSection" id="createProjectSection">
-                        <!--///////////////// create project step section /////////////////////-->
-                        <!-- project details section -->
-                        <div class="Project details wrapper createProjectForm show">
-                            <!-- top navbar section -->
-                            <div class="project-detials-header-section">
-                                <div class="row">
-                                    <div class='notification-navbar'>
-                                        <h2 class='m-0 fs-4'>Create a Project<span>/ Project details</span></h2>
-                                        <div>
-                                            <button><img src={notification} alt="" class='me-2' />Notification <span
-                                                    class='ms-2'>11</span></button>
-                                            <button class='create-project-btn'><i class="bi bi-plus"></i>Create
-                                                Project</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <!-- infobar -section -->
-                            <div class="project-infobar-section pb-4">
-                                <div class="row ">
-                                    <div class="col-4 active-img-cnt">
-                                        <img src="./icon-folder/project-icons/project-detials-info-01.png"
-                                            alt="active" />
-                                        <span class='ms-2 conect-line'>Project details</span>
-                                    </div>
-                                    <div class="col-4 inactive-img-cnt">
-                                        <img src="./icon-folder/project-icons/project-amenity-02.png" alt="inactive" />
-                                        <span class='ms-2 inactive-img-line'>Amenity requirements</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="./icon-folder/project-icons/project-manpower-ratio-03.png" alt="" />
-                                        <span class='ms-2'>Manpower ratio</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- first info detials section -->
-                            <div class="main-projectDetials-enter-cnt">
-                                <div class="">
-                                    <h3>Enter Project details</h3>
-                                    <div class='py-1 px-3'>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Enter Exam name</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="text" placeholder='IIM Entrance test'
-                                                    class='w-100 py-2 px-3 rounded border' />
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam category</label>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div
-                                                        class='d-flex border w-50 align-items-center rounded py-2 px-3 bg-white me-2'>
-                                                        <input type="radio" class='me-2' name="name1" />
-                                                        <label htmlFor="">Government</label>
-                                                    </div>
-                                                    <div
-                                                        class='d-flex border w-50 py-2 px-3 align-items-center rounded bg-white ms-2'>
-                                                        <input type="radio" class='me-2' name='name1' />
-                                                        <label htmlFor="">Private</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam type</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">Recruitment test1</option>
-                                                    <option value="">Recruitment test2</option>
-                                                    <option value="">Recruitment test3</option>
-                                                    <option value="">Recruitment test4</option>
-                                                    <option value="">Recruitment test5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam city</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">Delhi</option>
-                                                    <option value="">Patna</option>
-                                                    <option value="">Mumbai</option>
-                                                    <option value="">Pune</option>
-                                                    <option value="">Jaipur</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam Start & End Date</label>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class='row'>
-                                                    <div class='col-6'>
-                                                        <input type="date"
-                                                            class='me-2 border w-100 align-items-center rounded py-2 px-3 bg-white '
-                                                            name="name1" />
-                                                    </div>
-                                                    <div class='col-6'>
-                                                        <input type="date"
-                                                            class=' border w-100 py-2 px-3 align-items-center rounded bg-white'
-                                                            name='name1' />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center ">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam batch</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr />
-                                <div class="container">
-                                    <h3>Enter Software and Hardware requirements</h3>
-                                    <div class='p-4 bg-white rounded'>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Exam mode</label>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div
-                                                        class='d-flex border w-50 align-items-center rounded py-2 px-3 bg-white me-2'>
-                                                        <input type="radio" class='me-2' name="name1" />
-                                                        <label htmlFor="">Internet based</label>
-                                                    </div>
-                                                    <div
-                                                        class='d-flex border w-50 py-2 px-3 align-items-center rounded bg-white ms-2'>
-                                                        <input type="radio" class='me-2' name='name1' />
-                                                        <label htmlFor="">Server based</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h3 class='my-4'>Select Computer configuration</h3>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Operating System</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">Windows 10</option>
-                                                    <option value="">Linex</option>
-                                                    <option value="">Mic</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Select RAM</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">4GB</option>
-                                                    <option value="">6GB</option>
-                                                    <option value="">8GB</option>
-                                                    <option value="">12GB</option>
-                                                    <option value="">16GB</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Select Processor</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">Recruitment test1</option>
-                                                    <option value="">Recruitment test2</option>
-                                                    <option value="">Recruitment test3</option>
-                                                    <option value="">Recruitment test4</option>
-                                                    <option value="">Recruitment test5</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Display Resolution</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 border rounded py-2 px-3'>
-                                                    <option value="">1280 &times; 720</option>
-                                                    <option value="">1920 &times; 1080</option>
-                                                    <option value="">2560 &times; 1440</option>
-                                                    <option value="">3840 &times; 2160</option>
-                                                    <option value="">5120 &times; 2880</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">
-                                                <label htmlFor="">Internet on each device</label>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div
-                                                        class='d-flex border w-50 align-items-center rounded py-2 px-3 bg-white me-2'>
-                                                        <input type="radio" class='me-2' name="name1" />
-                                                        <label htmlFor="">Yes</label>
-                                                    </div>
-                                                    <div
-                                                        class='d-flex border w-50 py-2 px-3 align-items-center rounded bg-white ms-2'>
-                                                        <input type="radio" class='me-2' name='name1' />
-                                                        <label htmlFor="">No</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='project-Detials-btn-cnt'>
-                                    <button class='cancel-btn'>Cancel</button>
-                                    <button type="button" class='Next-btn createProjectNextBtn'>Next</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- project Amenity requirements section-->
-                        <div class="project-amenity-details-wrapper createProjectForm">
-                            <!-- Amenity navbar section -->
-                            <div class="row">
-                                <div class='notification-navbar'>
-                                    <h2 class='m-0 fs-4'>Create a Project<span>/ Amenity requirements</span></h2>
-                                    <div>
-                                        <button><img src="./icon-folder/project-icons/notifications.png" alt=""
-                                                class='me-2' />Notification <span class='ms-2'>11</span></button>
-                                        <button class='create-project-btn'><img
-                                                src="./icon-folder/project-icons/Plus.png" alt="">Create
-                                            Project</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <!-- project infobar detials step2 -->
-                            <div class="row py-3">
-                                <div class="col-4 active-img-cnt">
-                                    <img src="./icon-folder/project-icons/project-detials-info-01.png" alt="active" />
-                                    <span class='ms-2 conect-line'>Project details</span>
-                                </div>
-                                <div class="col-4 inactive-img-cnt">
-                                    <img src="./icon-folder/project-icons/project-amenity-02.png" alt="inactive" />
-                                    <span class='ms-2 inactive-img-line'>Amenity requirements</span>
-                                </div>
-                                <div class="col-4">
-                                    <img src="./icon-folder/project-icons/project-manpower-ratio-03.png" alt="" />
-                                    <span class='ms-2'>Manpower ratio</span>
-                                </div>
-                            </div>
-                            <!-- Enter Amenity detials section -->
-                            <div class="main-wrapper-section">
-                                <div class="container">
-                                    <div class="row heading">
-                                        <h3>Enter Amenity requirements</h3>
-                                    </div>
-                                    <div class="all-field-cnt px-2">
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Parking facility</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Security Guard</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='gender' />
-                                                        <span class='ms-2'>Male</span>
-                                                    </div>
-                                                    <div class='border w-50 mx-2  px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='gender' />
-                                                        <span class='ms-2'>Female</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='gender' />
-                                                        <span class='ms-2'>Both</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Lockers</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Waiting area</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Power Backup</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">PH Handicapped</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Printer</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Rough sheet</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Partition</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">AC in lab</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">CCTV required</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='py-3 px-5 bg-white rounded d-flex align-items-center '>
-                                            <div class="col-6">CCTV required</div>
-                                            <div class="col-6">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex '>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex '>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='go-back-next-btn-cnt text-center py-4'>
-                                        <button type="button" class='go-back-btn createProjectPrevBtn'>Go back</button>
-                                        <button type="button" class='next-btn createProjectNextBtn'>Next</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- project Manpower requirements section-->
-                        <div class="project-manpower-details-wrapper createProjectForm">
-                            <!-- Manpower navbar section -->
-                            <div class="row">
-                                <div class='notification-navbar'>
-                                    <h2 class='m-0 fs-4'>Create a Project<span>/ Manpower requirements</span></h2>
-                                    <div>
-                                        <button><img src="./icon-folder/project-icons/notifications.png" alt=""
-                                                class='me-2' />Notification <span class='ms-2'>11</span></button>
-                                        <button class='create-project-btn'><img
-                                                src="./icon-folder/project-icons/Plus.png" alt="">Create
-                                            Project</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <!-- Manpower infobar section -->
-                            <div class="row py-3">
-                                <div class="col-4 active-img-cnt disabled">
-                                    <img src="./icon-folder/project-icons/project-detials-info-01.png" alt="active" />
-                                    <span class='ms-2 conect-line'>Project details</span>
-                                </div>
-                                <div class="col-4 inactive-img-cnt disabled">
-                                    <img src="./icon-folder/project-icons/project-amenity-02.png" alt="inactive" />
-                                    <span class='ms-2 inactive-img-line'>Amenity requirements</span>
-                                </div>
-                                <div class="col-4">
-                                    <img src="./icon-folder/project-icons/project-manpower-ratio-03.png" alt="" />
-                                    <span class='ms-2'>Manpower ratio</span>
-                                </div>
-
-                            </div>
-                            <!-- Enter Manpower details section -->
-                            <div class="main-wrapper-section">
-                                <div class="container">
-                                    <div class="row heading">
-                                        <h3>Enter Manpower/staff requirements</h3>
-                                    </div>
-                                    <div class="all-field-cnt px-2">
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Center Superintendent</div>
-                                            <div class="col-6 ps-0">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='py-3 px-3 bg-white rounded d-flex align-items-center mb-3'>
-                                            <div class="col-6">Number of Superintendents required</div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 py-2 px-3 border rounded bg-light'>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Technical Support</div>
-                                            <div class="col-6 ps-0">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='py-3 px-3 bg-white rounded d-flex align-items-center mb-3'>
-                                            <div class="col-6">Number of Technical Support staff reqd.</div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 py-2 px-3 border rounded bg-light'>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center pb-3">
-                                            <div class="col-6">Invigilator</div>
-                                            <div class="col-6 ps-0">
-                                                <div class='d-flex justify-content-between'>
-                                                    <div class='border w-50 me-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>Yes</span>
-                                                    </div>
-                                                    <div class='border w-50 ms-2 px-3 py-2 rounded d-flex bg-white'>
-                                                        <input type="radio" name='conform' />
-                                                        <span class='ms-2'>No</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class='py-3 px-3 bg-white rounded d-flex align-items-center mb-3'>
-                                            <div class="col-6">Number of Invigilators required</div>
-                                            <div class="col-6">
-                                                <select name="" id="" class='w-100 py-2 px-3 border rounded bg-light'>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='go-back-next-btn-cnt text-center py-4'>
-                                        <button type="button" class='go-back-btn createProjectPrevBtn'>Go back</button>
-                                        <a href="./create project.html" class='next-btn'>Submit</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tablecalenderContent">
-                        <!--//////////////////////////////////////// Calender section ////////////////-->
-                        <div class="calender-wrapper">
-                            <div class="container">
-                                <div class="row">
-                                    <div class='notification-navbar'>
-                                        <h2 class='m-0 fs-4'>My Calendar</h2>
-                                        <div>
-                                            <button><img src="./icon-folder/project-icons/notifications.png" alt=""
-                                                    class='me-2' />Notification <span class='ms-2'>11</span></button>
-                                            <button class='create-project-btn createProjectBtn'><img
-                                                    src="./icon-folder/project-icons/Plus.png" alt="">Create
-                                                Project</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col-8 py-4">
-                                        <div class='project-create-cnt'>
-                                            <ul class='px-0 w-50 justify-contant-start'>
-                                                <li><a href="#" class='all-project-tab'>Upcoming<span
-                                                            class='ms-2'>38</span></a></li>
-                                                <li><a href="#" class='me-5'>Past</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 py-4 projectCreate-btn-cnt">
-                                        <button class=''><img src="./icon-folder/project-icons/Plus.png" alt="">Add
-                                            event</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='tableHeading'>
-                                <div class='exam-name-input-cnt'>
-                                    <img src="./icon-folder/project-icons/search.png" alt="" />
-                                    <input type='text' placeholder='Enter exam name..' />
-                                </div>
-                                <div class='filter-download-cnt'>
-                                    <select>
-                                        <option value="">Filter By</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
-                                    <select>
-                                        <option value="">Sort By</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
-                                    <select>
-                                        <option value="">Tiled view</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
-                                    <button>Export <img src="./icon-folder/project-icons/Download.png"
-                                            alt="download" /></button>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class='main-calender-cnt mb-3'>
-                                    <p class='mt-4 mb-3'>November</p>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>11-14</h2>
-                                                <p class='m-0'>33 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>PAN India IIM Entrance exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='main-calender-cnt'>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>25-28</h2>
-                                                <p class='m-0'>50 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>IOCL Recruitment exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='main-calender-cnt mb-3'>
-                                    <p class='mt-4 mb-3'>December</p>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>11-14</h2>
-                                                <p class='m-0'>33 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>PAN India IIM Entrance exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='main-calender-cnt mb-3'>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>11-14</h2>
-                                                <p class='m-0'>33 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>PAN India IIM Entrance exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='main-calender-cnt'>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>11-14</h2>
-                                                <p class='m-0'>33 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>PAN India IIM Entrance exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='main-calender-cnt mb-3'>
-                                    <p class='mt-4 mb-3'>February</p>
-                                    <div class='border rounded d-flex'>
-                                        <div
-                                            class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
-                                            <div class='py-3'>
-                                                <p class='m-0'>Thu</p>
-                                                <h2 class='mb-3 fs-2'>11-14</h2>
-                                                <p class='m-0'>33 day left</p>
-                                            </div>
-                                        </div>
-                                        <div class='d-flex justify-content-between w-75 px-3 align-items-center'>
-                                            <div>
-                                                <div class='d-flex align-items-center py-3'>
-                                                    <h2 class='m-0'>PAN India IIM Entrance exam</h2>
-                                                    <button class='booked-btn'>Booked</button>
-                                                    <button class='panding-calender-btn'>Pending</button>
-                                                </div>
-                                                <div class='d-flex py-3 justify-content-between'>
-                                                    <div class='d-flex align-items-center '>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender.png" alt="" />
-                                                        </div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>137</h2>
-                                                                <p class='m-0'>Centers booked</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div class=''>
-                                                                <h2 class='m-0'>14,000</h2>
-                                                                <p class='m-0'>Candidates assessed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='d-flex align-items-center ms-5'>
-                                                        <div class='me-2'><img
-                                                                src="./icon-folder/project-icons/calender-user.png"
-                                                                alt="" /></div>
-                                                        <div class='d-flex align-items-center justify-content-between'>
-                                                            <div>
-                                                                <h2 class='m-0'>4</h2>
-                                                                <p class='m-0'>Cities covered</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <img src="./icon-folder/project-icons/aside circle.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pop-up section -->
-                        <div class='main-share-cnt'>
-                            <div class="share-header">
-                                <div class=' '> <img src="./icon-folder/project-icons/Share - icon.png" alt="share"
-                                        class='me-2' />Share</div>
-                                <div class=''><img src="./icon-folder/project-icons/cut-icon.png" alt="cut" /></div>
-                            </div>
-                            <div class='info-cnt'>
-                                <div class='py-4 ps-4'>
-                                    <button class='booked-btn m-0 me-3'>Booked</button>
-                                    <button class='panding-calender-btn'>Pending</button>
-                                    <h2 class='my-3 fs-3'>IOCL Recruitment Exam</h2>
-                                    <div class='d-flex'>
-                                        <h2 class='m-0 me-3 fs-6'>Nov 11th - 14th</h2>
-                                        <h2 class='m-0 fs-6'>50 days left</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class='mt-0' />
-                            <div class='numerical-info-cnt'>
-                                <div class='d-flex ps-4 pe-5 justify-content-between'>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
-                                        </div>
-                                    </div>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class='ps-4 pt-3'>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class='Description-cnt'>
-                                <div class='ps-4'>
-                                    <p>Description</p>
-                                </div>
-                                <div class='px-4'>
-                                    <p class='text-dark'>IOCL’s recruitment exam is carried out yearly. Every year over
-                                        100+ centers are booked across different cities to maintain availability and
-                                        support equal opportunity for all candidates across India.</p>
-                                </div>
-                            </div>
-                            <div class='mt-4'>
-                                <div class='ps-4'>
-                                    <p>Attachments</p>
-                                </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/center-profile.png" alt=""
-                                                class='me-3' /></div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
-                                        </div>
-                                    </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
-                                    </div>
-                                </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/Audit-profile.png" alt=""
-                                                class='me-3' /></div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
-                                        </div>
-                                    </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
-                                    </div>
-                                </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/project-details.png" alt=""
-                                                class='me-3' /></div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
-                                        </div>
-                                    </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
-                                    </div>
-
-                                </div>
-                                <div class='px-4'>
-                                    <p class='m-0 pt-3'>Got an issue</p><br />
-                                    <input type="textarea" class='w-100 border rounded mb-4 px-3 py-2'
-                                        placeholder='Write your message here...' />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Aside section start-->
+  <div class="aside-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 aside-bg">
+          <a href="#" class="aside-heading">BookMyTestCenter</a>
+          <div class="aside-tag-wrapper">
+            <div class="aside-tag-cnt tab active">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/icon1-grey.png" alt="user-icon-white" class="user-grey" />
+                <img src="./icon-folder/aside-icon/Active1-white.png" alt="user-icon-grey" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Your details</h3>
+                <p class="m-0">Enter your full name, email & phone no.</p>
+              </div>
             </div>
+            <div class="aside-tag-cnt tab ">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/icon-right-grey.png" alt="circleRight" class="user-grey" />
+                <img src="./icon-folder/aside-icon/icon-right-white.png" alt="circleRight" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Verify your phone number</h3>
+                <p class="m-0">Enter the OTP sent on your phone number</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt tab">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/Mpin-grey-icon.png" alt="Mpin" class="user-grey" />
+                <img src="./icon-folder/aside-icon/Mpin-white-icon.png" alt="Mpin" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Choose your M-PIN</h3>
+                <p class="m-0">Enter your M-PIN for easy access.</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt tab">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/compDetails-grey.png" alt="comp" class="user-grey" />
+                <img src="./icon-folder/aside-icon/compDatils-white.png" alt="comp" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Enter your company details</h3>
+                <p class="m-0">Add the required company information.</p>
+              </div>
+            </div>
+            <div class="aside-tag-cnt tab">
+              <div class="icon-box">
+                <img src="./icon-folder/aside-icon/welcom-grey.png" alt="welcom" class="user-grey" />
+                <img src="./icon-folder/aside-icon/welcom-white.png" alt="welcom" class="user-white" />
+              </div>
+              <div>
+                <h3 class="m-0">Welcome to BookMyTestCenter</h3>
+                <p class="m-0">Get started right away.</p>
+              </div>
+            </div>
+          </div>
+          <p class="company-year">@2016 | Testpan India Private Limited</p>
         </div>
-    </div>
+        <div class="col-8">
+          <div class='need-help-otp-cnt'>
+            <button button="submit" class='go-back-btn mainGoBackBtn' id="mainGoBackBtn"><i className="bi bi-arrow-left"></i>Go back</button>
+            <div class="needHelpWrapper">
+                <a href='/'>Need help?</a>
+            </div>
+          </div>
+          <div class="create-account-cnt">
+            <!-- /////////////////login part//////////////// -->
+            <form class="form-cnt section tab-content show">
+              <div class="form-heading">
+                <div class="commom-header-icon">
+                  <span class="icon-box-form"><img src="./icon-folder/aside-icon/login-page-icon.png" alt="" /></span>
+                </div>
+                <h1 class="mt-3">Create an account</h1>
+                <p>Provide your full name, email and phone number</p>
+              </div>
+              <div class="form-input-cnt">
+                <p>
+                  <label htmlFor="">First name*</label><br />
+                  <span class="input-icon-person">
+                    <img src="./icon-folder/aside-icon/user-name-login.png" alt="" />
+                  </span>
+                  <input type="text" />
+                </p>
+                <p>
+                  <label htmlFor="">Email*</label><br />
+                  <span class="input-icon-at">
+                    <img src="./icon-folder/aside-icon/user-email-login.png" alt="" />
+                  </span>
+                  <input type="email" />
+                </p>
+                <p>
+                  <label htmlFor="">Phone number*</label><br />
+                  <span class="input-icon-flag"><img src="./icon-folder/aside-icon/user-number-login.png"
+                      alt="flag" /></span>
+                  <input type="number" />
+                </p>
+              </div>
+              <div class="form-footer">
+                <p class="checkbox-cnt">
+                  <input type="checkbox" />
+                  <label htmlFor="">I agree to the
+                    <span class="privacy-policy">Terms & Service & Privacy Policy</span></label><br />
+                </p>
+                <button type="button" class="proceed-btn nextFormBtn">Prossed <img src="./icon-folder/aside-icon/Arrow 3.png"
+                    alt=""></button>
+                <p class="login-text">
+                  Already have an account?<a href="/">Log in</a>
+                </p>
+              </div>
+            </form>
+            <!-- ////////////// OTP section ////////////////////  -->
+             <form class="form-otp-cnt section tab-content">
+              <div class="form-heading">
+                <div class='commom-header-icon'><span class='icon-box-form'><img
+                      src="./icon-folder/aside-icon/otp-head-icon.png" alt="" /></span></div>
+                <h1 class='mt-3'>Verify your phone number, Mahesh</h1>
+                <p>We sent a 6 digit OTP to 9922345678</p>
+              </div>
+              <div class='form-input-otp-cnt'>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+              <div class="form-footer">
+                <p class='login-text'>Didn’t get a code?<a href="/">Resend</a></p>
+                <button type="button" class='proceed-btn nextFormBtn'>proceed <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+                <p class='login-text'>Incorrect phone number?<a href="/">Change</a></p>
+              </div>
+            </form> 
+            <!-- /////////////// M-Pin section/////////////////////////////// -->
+            <form class="form-otp-cnt section tab-content">
+              <div class="form-heading">
+                <div class='commom-header-icon'><img src="./icon-folder/aside-icon/M-pin-header-icon.png" alt=""></div>
+                <h1 class='mt-3'>Setup your 4 digit M-PIN</h1>
+                <p>The M-Pin will be used for logging in in the future</p>
+              </div>
+              <div class='form-input-mpin-cnt'>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+              <div class="form-footer">
+                <button type="button" class='proceed-btn mt-3 nextFormBtn'>proceed <img src="./icon-folder/aside-icon/Arrow 3.png"
+                    alt=""></button>
+              </div>
+            </form>
+            <div class="tab-content">
+              <!-- ///////////////// Company Details section first //////////////////////// -->
+              <div class="w-100 company-contetnt show">
+                <div class="form-heading">
+                  <div class='commom-header-icon'><img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                  <h1 class='mt-3'>Enter company details</h1>
+                  <p>Add the required company information</p>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="">
+                  </div>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/contact-detils-icon.png" alt="">
+                  </div>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="progress my-2">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <p class='first-comp'>01: Company details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p>02: Point of Contact details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p>03: Bank details & documents</p>
+                  </div>
+                </div>
+                <div class="comp-basic-details">
+                  <p>Basic details</p>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Company Name</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Company type</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Company website</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                </div>
+                <div class='location details pt-4'>
+                  <p>Location details</p>
+                  <div class='row py-2'>
+                    <div class="col-6">
+                      <label htmlFor="">Which Country is the company based in</label>
+                    </div>
+                    <div class="col-6">
+                      <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                        <option value="option1">India</option>
+                        <option value="option2">Chaina</option>
+                        <option value="option3">America</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6">
+                      <label htmlFor="">Pincode</label>
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class='w-100 rounded input-bg px-2 py-1' />
+                    </div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6">
+                      <label htmlFor="">state</label>
+                    </div>
+                    <div class="col-6">
+                      <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                        <option value="option1">India</option>
+                        <option value="option2">Chaina</option>
+                        <option value="option3">America</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6">
+                      <label htmlFor="">city</label>
+                    </div>
+                    <div class="col-6 ">
+                      <select id="dropdown" name="dropdown" class='w-100 py-2 px-2 rounded input-bg'>
+                        <option value="option1">India</option>
+                        <option value="option2">Chaina</option>
+                        <option value="option3">America</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6">
+                      <label htmlFor="">Company Address</label>
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class='w-100 rounded input-bg px-2 py-1' />
+                    </div>
+                  </div>
 
-    <script src="./js/script.js"></script>
+                </div>
+                <div class='comp-details-btn-cnt'>
+                  <button type="button" class='proceed-btn comapnyNextBtn'>Next <img src="./icon-folder/aside-icon/Arrow 3.png"
+                      alt="right-qrrow"></button>
+                </div>
+              </div>
+              <!-- //////////////////////////// Company Details section second ////////////////  -->
+              <div class="company-contetnt">
+                <div class="form-heading">
+                  <div class='commom-header-icon'><img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                  <h1 class='mt-3'>Enter company details</h1>
+                  <p>Add the required company information</p>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <span><img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="icon1" /></span>
+                  </div>
+                  <div class='col-4'>
+                    <span><img src="./icon-folder/aside-icon/contact-detials-color-icon.png" alt="icon2" /></span>
+                  </div>
+                  <div class='col-4'>
+                    <span><img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="icon3" /></span>
+                  </div>
+                </div>
+                <div class="progress my-2">
+                  <div class="progress-bar" role="progressbar"  aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <p class='first-comp'>01: Company details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p class='first-comp'>02: Point of Contact details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p>03: Bank details & documents</p>
+                  </div>
+                </div>
+                <div class="comp-basic-details">
+                  <p>Basic details</p>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Name of the Co-ordinator</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Email</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Mobile number</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Alternate mobile number</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Landline number</label></div>
+                    <div class="col-6 d-flex">
+                      <div class='w-25'>
+                        <input type="text" class='w-100 rounded input-bg py-1' />
+                      </div>
+                      <div class='w-50 mx-2'>
+                        <input type="text" class='w-100 rounded input-bg py-1' />
+                      </div>
+                      <div class='w-25'>
+                        <input type="text" class='w-100 rounded input-bg py-1' />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='comp-details-btn-cnt'>
+                  <button class='Go-back-btn comapnyBackBtn'>Go back</button>
+                  <button type="button" class='proceed-btn comapnyNextBtn'>Next <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+                </div>
+              </div>
+              <!--/////////////////////////////// Bank detials section ///////////////////////-->
+              <div class="w-100 company-contetnt">
+                <div class="form-heading">
+                  <div class='commom-header-icon'> <img src="./icon-folder/aside-icon/comp-detls-1.png" alt=""></div>
+                  <h1 class='mt-3'>Enter company details</h1>
+                  <p>Add the required company information</p>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/comp-detils-icons.png" alt="">
+                  </div>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/contact-detials-color-icon.png" alt="">
+                  </div>
+                  <div class='col-4'>
+                    <img src="./icon-folder/aside-icon/bank-detials-icon.png" alt="">
+                  </div>
+                </div>
+                <div class="progress  my-2">
+                  <div class="progress-bar w-60" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class='row'>
+                  <div class='col-4'>
+                    <p class='first-comp'>01: Company details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p class='first-comp'>02: Point of Contact details</p>
+                  </div>
+                  <div class='col-4'>
+                    <p>03: Bank details & documents</p>
+                  </div>
+                </div>
+                <div class="comp-basic-details">
+                  <p>Bank details</p>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Enter bank name</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Account number</label></div>
+                    <div class="col-6"><input type="number" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">IFSC code</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">Beneficiary name</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">PAN number</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2'>
+                    <div class="col-6"><label htmlFor="">GST number</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                </div>
+                <div class="upload-documents">
+                  <p class='pt-5'>Upload documents</p>
+                  <div class='row py-2 align-items-start'>
+                    <div class="col-6"><label htmlFor="">Enter bank name</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
+                          <label htmlFor="file-input" class="custom-file-label">
+                            <img src={fileChooses} alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
+                          <label htmlFor="file-input" class="custom-file-label">
+                            <img src={fileChooses} alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
+                          <label htmlFor="file-input" class="custom-file-label">
+                            <img src={fileChooses} alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
+                          <label htmlFor="file-input" class="custom-file-label">
+                            <img src={fileChooses} alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Udyam Certificate</label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
+                          <label htmlFor="file-input" class="custom-file-label">
+                            <img src={fileChooses} alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-start'>
+                    <div class="col-6"><label htmlFor="">Enter Udyam Aadhar number</label></div>
+                    <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>
+                  </div>
+                </div>
+                <div class='comp-details-btn-cnt'>
+                  <button class='Go-back-btn comapnyBackBtn'>Go back</button>
+                  <button type="button" class='proceed-btn nextFormBtn'>Submit <img src="./icon-folder/aside-icon/Arrow 3.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <!--////////////////////////////// Good to go section ////////////////////////////-->
+            <form class="form-otp-cnt tab-content">
+              <div class="form-heading">
+                <div class='commom-header-icon'><img src="./icon-folder/aside-icon/good to go icon.png" alt=""></div>
+                <h1 class='mt-3'>Welcome to BookMyTestCenter</h1>
+                <p>You are good to go!</p>
+              </div>
+              <div class='form-input-mpin-cnt'>
+                <div class="video-container">
+                  <video class="object-fit-cover" autoPlay muted loop>
+                    <source src="./video/video1.mp4" type="video/mp4" />
+                  </video>
+                  <div class="play-icon"></div>
+                </div>
+              </div>
+              <div class="finish-btn-cnt">
+                <a href="./create project.html" class='finish-btn'><img src="./icon-folder/aside-icon/Finish up 🚀.png" alt=""></a>
+              </div>
+            </form>
+          </div>
+          <div class="indicatorCnt">
+            <ul class="indicatorWrapper" id="indicatorCnt">
+              <li class="indicatorItem active"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+              <li class="indicatorItem"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aside section end-->
+
+  <!--js link here -->
+  <script src="./js/script.js"></script>
+
+  <!-- bootstrap script link here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
