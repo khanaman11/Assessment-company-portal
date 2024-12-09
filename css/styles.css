@@ -63,15 +63,19 @@ label {
   margin-bottom: 24px;
   position: relative;
 }
-.user-white{
+
+.user-white {
   display: none;
 }
-.aside-tag-cnt.active .user-white{
+
+.aside-tag-cnt.active .user-white {
   display: block;
 }
-.aside-tag-cnt.active .user-grey{
+
+.aside-tag-cnt.active .user-grey {
   display: none;
 }
+
 .aside-tag-cnt.active h3 {
   color: #000000;
 }
@@ -132,12 +136,17 @@ label {
 .form-cnt {
   max-width: 400px;
 }
-.tab-content, .company-contetnt{
+
+.tab-content,
+.company-contetnt {
   display: none;
 }
-.tab-content.show, .company-contetnt.show{
+
+.tab-content.show,
+.company-contetnt.show {
   display: block;
 }
+
 .icon-box-form {
   width: 50px;
   height: 50px;
@@ -260,9 +269,11 @@ label {
   font-size: 14px;
   font-weight: 600;
 }
-.right-section{
+
+.right-section {
   margin-left: 33.33%;
 }
+
 /* indicator css start */
 .indicatorWrapper {
   display: flex;
@@ -564,6 +575,14 @@ label {
   width: 1px;
 }
 
+.progress-bar1 {
+  width: 40%;
+}
+
+.progress-bar2 {
+  width: 60%;
+}
+
 .progress,
 .progress-stacked {
   border-radius: 0;
@@ -753,9 +772,11 @@ input[type="file"] {
   overflow: auto;
   position: fixed;
 }
-.right-section-project{
+
+.right-section-project {
   margin-left: 16.66%;
 }
+
 .bookmytestcenter-heading {
   color: #000000;
   text-decoration: none;
@@ -870,12 +891,20 @@ input[type="file"] {
 
 
 /* Myproject Navbar notification style start */
-.tablecalenderContent, .createProjectSection, .projectTableContent, .createProjectForm{
+.tablecalenderContent,
+.createProjectSection,
+.projectTableContent,
+.createProjectForm {
   display: none;
 }
-.tablecalenderContent.show, .createProjectSection.show, .projectTableContent.show, .createProjectForm.show{
+
+.tablecalenderContent.show,
+.createProjectSection.show,
+.projectTableContent.show,
+.createProjectForm.show {
   display: block;
 }
+
 .notification-navbar {
   display: flex;
   justify-content: space-between;
@@ -1270,6 +1299,7 @@ th {
   border-radius: 10px;
 
 }
+
 .go-back-next-btn-cnt .go-back-btn {
   width: 141px;
   padding: 10px;
@@ -1281,6 +1311,7 @@ th {
   font-size: 16px;
   font-weight: 700;
 }
+
 .go-back-next-btn-cnt .go-back-btn {
   width: 141px;
   padding: 10px;
