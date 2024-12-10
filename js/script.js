@@ -145,3 +145,14 @@ createProjectPrevBtns.forEach((element, index) => {
 
 
 // modal script 
+
+
+const examCenterBtns = document.querySelectorAll(".examCenterBtn");
+const eligibleCnt = document.querySelector(".eligibleCnt");
+const approveCnt = document.querySelector(".approveCnt");
+examCenterBtns.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        tablecalenderContents.forEach(content => content.classList.remove("show"));
+        eligibleCnt.classList.add("show")
+    })
+})
