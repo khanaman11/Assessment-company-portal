@@ -772,6 +772,9 @@ input[type="file"] {
   overflow: auto;
   position: fixed;
 }
+.lttv-cnt{
+  margin-right: 10px;
+}
 
 .right-section-project {
   margin-left: 16.66%;
@@ -798,7 +801,7 @@ input[type="file"] {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #737373;
   border-radius: 10px;
@@ -1167,6 +1170,29 @@ th {
   border-radius: 10px;
 }
 
+.reject-btn {
+  background: #EA36361A;
+  color: #3F892C;
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+.view-btn{
+  padding: 5px 10px;
+  background: #2A75AE;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+
+}
+.reject-btn img{
+  margin-right: 10px;
+}
+
 .compelet-btn img {
   margin-right: 10px;
 }
@@ -1287,7 +1313,6 @@ th {
   border-radius: 10px;
   margin-left: 10px;
 
-
 }
 
 /*/////////////////////////// first info detials section style end///////////////////////  */
@@ -1334,6 +1359,8 @@ th {
   font-size: 16px;
   font-weight: 700;
   margin-left: 10px;
+  display:inline-block;
+  text-decoration: none;
 
 }
 
@@ -1341,6 +1368,9 @@ th {
 
 
 /* ///////////////////////////////// My Calendar style start ////////////////////////////////*/
+.main-calender-cnt{
+  position: relative;
+}
 .calender-tab-btn-cnt {
   width: 350px;
 }
@@ -1386,8 +1416,16 @@ th {
 /* pop-up section style start */
 .main-share-cnt {
   max-width: 460px;
+  background-color: #fff;
   box-shadow: -4px 0px 40px 0px #A29F9F3D;
+  position: absolute;
+  /* top: 50%; */
+  /* right: 0; */
+  /* cursor: pointer; */
 
+}
+.open-modal{
+  margin-right: 460px;
 }
 
 .share-header {
@@ -1400,3 +1438,20 @@ th {
 }
 
 /* pop-up section style end */
+
+/* Eligible progress bar style start */
+.progress-height{
+  height: 80px !important;
+  border-radius: 10px;
+}
+.Eligible-progress-bar{
+  background: #A0E290;
+  font-size: 20px;
+  color:#737373;
+  ;
+}
+.prosses-bar-bg{
+  background: #F9FAFB;
+
+}
+/* Eligible progress bar style start */

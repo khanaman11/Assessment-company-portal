@@ -1,33 +1,3 @@
-// // create an acount script here;
-
-// let tabs = document.querySelectorAll(".aside-tag-cnt");
-// let contents = document.querySelectorAll("#content");
-// let proceedBtn = document.querySelectorAll(".proceed-btn");
-
-// let currentTab = 0;
-
-// function changeTab() {
-
-//     contents[currentTab].style.display = "none";
-//     proceedBtn[currentTab].style.display = "none";
-//     tabs[currentTab].classList.remove("active");
-
-//     currentTab = (currentTab + 1) % tabs.length;
-
-
-//     contents[currentTab].style.display = "block";
-//     proceedBtn[currentTab].style.display = "inline-block";
-//     tabs[currentTab].classList.add("active");
-// }
-
-
-// proceedBtn.forEach(button => {
-//     button.addEventListener("click", changeTab);
-// });
-
-// tabs[currentTab].classList.add("active");
-// contents[currentTab].style.display = "block";
-// proceedBtn[currentTab].style.display = "inline-block";
 
 
 
@@ -172,3 +142,6 @@ createProjectPrevBtns.forEach((element, index) => {
         }
     });
 });
+
+
+// modal script 
