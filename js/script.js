@@ -83,12 +83,18 @@ const projectTableContents = document.querySelectorAll(".projectTableContent");
 const createProjectForms = document.querySelectorAll(".createProjectForm");
 const createProjectNextBtns = document.querySelectorAll(".createProjectNextBtn");
 const createProjectPrevBtns = document.querySelectorAll(".createProjectPrevBtn");
+const examCenterBtns = document.querySelectorAll(".examCenterBtn");
+const approveItemBtns = document.querySelectorAll(".approveItemBtn");
+const eligibleCnt = document.querySelector(".eligibleCnt");
+const approveCnt = document.querySelector(".approveCnt");
 
 // Tab switching logic for table calendar
 tablecalenderTabs.forEach((element, index) => {
     element.addEventListener("click", () => {
         tablecalenderTabs.forEach(tab => tab.classList.remove("active"));
         tablecalenderContents.forEach(content => content.classList.remove("show"));
+        approveCnt.classList.remove("show")
+        eligibleCnt.classList.remove("show")
         if (createProject) createProject.classList.remove("active");
         if (createProjectSection) createProjectSection.classList.remove("show");
 
@@ -102,7 +108,8 @@ createProjectBtns.forEach((element) => {
     element.addEventListener("click", () => {
         tablecalenderTabs.forEach(tab => tab.classList.remove("active"));
         tablecalenderContents.forEach(content => content.classList.remove("show"));
-
+        approveCnt.classList.remove("show")
+        eligibleCnt.classList.remove("show")
         if (createProject) createProject.classList.add("active");
         if (createProjectSection) createProjectSection.classList.add("show");
     });
@@ -146,13 +153,18 @@ createProjectPrevBtns.forEach((element, index) => {
 
 // modal script 
 
-
-const examCenterBtns = document.querySelectorAll(".examCenterBtn");
-const eligibleCnt = document.querySelector(".eligibleCnt");
-const approveCnt = document.querySelector(".approveCnt");
 examCenterBtns.forEach((element)=>{
     element.addEventListener("click",()=>{
         tablecalenderContents.forEach(content => content.classList.remove("show"));
+        approveCnt.classList.remove("show")
         eligibleCnt.classList.add("show")
+    })
+})
+
+approveItemBtns.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        tablecalenderContents.forEach(content => content.classList.remove("show"));
+        eligibleCnt.classList.remove("show")
+        approveCnt.classList.add("show")
     })
 })

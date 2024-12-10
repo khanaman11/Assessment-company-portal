@@ -899,7 +899,8 @@ input[type="file"] {
 .createProjectSection,
 .projectTableContent,
 .createProjectForm,
-.eligibleApproveCnt {
+.eligibleCnt,
+.approveCnt {
   display: none;
 }
 
@@ -907,7 +908,8 @@ input[type="file"] {
 .createProjectSection.show,
 .projectTableContent.show,
 .createProjectForm.show,
-.eligibleApproveCnt.show {
+.eligibleCnt.show,
+.approveCnt.show {
   display: block;
 }
 
