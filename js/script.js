@@ -87,6 +87,13 @@ const examCenterBtns = document.querySelectorAll(".examCenterBtn");
 const approveItemBtns = document.querySelectorAll(".approveItemBtn");
 const eligibleCnt = document.querySelector(".eligibleCnt");
 const approveCnt = document.querySelector(".approveCnt");
+let buttonsModal = document.querySelectorAll("#popupButton");
+let Modal = document.querySelector(".main-share-cnt");
+let closePopup = document.querySelector(".closePopup");
+let backButton = document.getElementById("backButton");
+let backButtonApprove = document.getElementById("backButtonApprove");
+
+
 
 // Tab switching logic for table calendar
 tablecalenderTabs.forEach((element, index) => {
@@ -151,20 +158,44 @@ createProjectPrevBtns.forEach((element, index) => {
 });
 
 
-// modal script 
-
-examCenterBtns.forEach((element)=>{
-    element.addEventListener("click",()=>{
+examCenterBtns.forEach((element) => {
+    element.addEventListener("click", () => {
         tablecalenderContents.forEach(content => content.classList.remove("show"));
         approveCnt.classList.remove("show")
         eligibleCnt.classList.add("show")
     })
 })
 
-approveItemBtns.forEach((element)=>{
-    element.addEventListener("click",()=>{
+approveItemBtns.forEach((element) => {
+    element.addEventListener("click", () => {
         tablecalenderContents.forEach(content => content.classList.remove("show"));
         eligibleCnt.classList.remove("show")
         approveCnt.classList.add("show")
     })
 })
+
+// Modal
+buttonsModal.forEach(function (button, index) {
+    button.addEventListener("click", function () {
+        Modal.classList.add("show")
+        document.getElementsByTagName("body")[0].classList.add("modal-open")
+    });
+});
+
+closePopup.addEventListener("click", () => {
+    Modal.classList.remove("show")
+})
+
+backButton.addEventListener("click", function () {
+    console.log("hi")
+    tablecalenderContents.forEach(content => content.classList.remove("show"));
+    approveCnt.classList.remove("show")
+    eligibleCnt.classList.remove("show")
+    tablecalenderTabs[0].classList.add("active");
+    tablecalenderContents[0].classList.add("show");
+});
+backButtonApprove.addEventListener("click", function () {
+    tablecalenderContents.forEach(content => content.classList.remove("show"));
+    approveCnt.classList.remove("show")
+    eligibleCnt.classList.add("show")
+});

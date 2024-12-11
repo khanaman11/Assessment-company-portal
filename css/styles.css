@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
 }
-
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -233,6 +232,7 @@ label {
   border-radius: 10px;
   padding: 10px;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .proceed-btn i {
@@ -861,7 +861,7 @@ input[type="file"] {
 .aside-footer-cnt {
   position: absolute;
   bottom: 0;
-  left: 6px;
+  left: 13px;
 }
 
 .aside-footer-cnt p {
@@ -1398,6 +1398,7 @@ th {
 /* ///////////////////////////////// My Calendar style start ////////////////////////////////*/
 .main-calender-cnt {
   position: relative;
+  cursor: pointer;
 }
 
 .calender-tab-btn-cnt {
@@ -1444,17 +1445,34 @@ th {
 
 /* pop-up section style start */
 .main-share-cnt {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+.main-share-cnt.show{
+  display: block;
+}
+.main-share-wrapper {
   max-width: 460px;
   background-color: #fff;
   box-shadow: -4px 0px 40px 0px #A29F9F3D;
   position: absolute;
-  top: 50%; 
+  top: 0; 
   right: 0;
   cursor: pointer; 
-  display: none;
-
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: 5s all ease-in-out;
 }
-
+.main-share-cnt.show .main-share-wrapper{
+  visibility: visible;
+  transform: translateX(0);
+}
 .open-modal {
   margin-right: 460px;
 }

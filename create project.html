@@ -625,9 +625,10 @@
                                     <div class='notification-navbar'>
                                         <h2 class='m-0 fs-4'>Create a Project<span>/ Project details</span></h2>
                                         <div>
-                                            <button><img src={notification} alt="" class='me-2' />Notification <span
-                                                    class='ms-2'>11</span></button>
-                                            <button class='create-project-btn'> <img src="./icon-folder/project-icons/Plus.png" alt="">Create
+                                            <button><img src="./icon-folder/project-icons/notifications.png" alt=""
+                                                    class='me-2' />Notification <span class='ms-2'>11</span></button>
+                                            <button class='create-project-btn'> <img
+                                                    src="./icon-folder/project-icons/Plus.png" alt="">Create
                                                 Project</button>
                                         </div>
                                     </div>
@@ -1279,7 +1280,7 @@
                             <div class="container">
                                 <div class='main-calender-cnt mb-3'>
                                     <p class='mt-4 mb-3'>November</p>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1341,7 +1342,7 @@
                                     </div>
                                 </div>
                                 <div class='main-calender-cnt'>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1404,7 +1405,7 @@
                                 </div>
                                 <div class='main-calender-cnt mb-3'>
                                     <p class='mt-4 mb-3'>December</p>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1466,7 +1467,7 @@
                                     </div>
                                 </div>
                                 <div class='main-calender-cnt mb-3'>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1528,7 +1529,7 @@
                                     </div>
                                 </div>
                                 <div class='main-calender-cnt'>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1591,7 +1592,7 @@
                                 </div>
                                 <div class='main-calender-cnt mb-3'>
                                     <p class='mt-4 mb-3'>February</p>
-                                    <div class='border rounded d-flex'>
+                                    <div class='border rounded d-flex' id="popupButton">
                                         <div
                                             class='d-flex justify-content-center align-items-center w-25 bg-light border-right'>
                                             <div class='py-3'>
@@ -1655,120 +1656,124 @@
                             </div>
                         </div>
                         <!-- Pop-up section -->
-                        <div class='main-share-cnt'>
-                            <div class="share-header">
-                                <div class=' '> <img src="./icon-folder/project-icons/Share - icon.png" alt="share"
-                                        class='me-2' />Share</div>
-                                <div class=''><img src="./icon-folder/project-icons/cut-icon.png" alt="cut" /></div>
-                            </div>
-                            <div class='info-cnt'>
-                                <div class='py-4 ps-4'>
-                                    <button class='booked-btn m-0 me-3'>Booked</button>
-                                    <button class='panding-calender-btn'>Pending</button>
-                                    <h2 class='my-3 fs-3'>IOCL Recruitment Exam</h2>
-                                    <div class='d-flex'>
-                                        <h2 class='m-0 me-3 fs-6'>Nov 11th - 14th</h2>
-                                        <h2 class='m-0 fs-6'>50 days left</h2>
+                         <div class="main-share-cnt fade">
+                            <div class='main-share-wrapper'>
+                                <div class="share-header">
+                                    <div class=' '> <img src="./icon-folder/project-icons/Share - icon.png" alt="share"
+                                            class='me-2' />Share</div>
+                                    <div class='closePopup'>
+                                        <img src="./icon-folder/project-icons/cut-icon.png" alt="cut" />
                                     </div>
                                 </div>
-                            </div>
-                            <hr class='mt-0' />
-                            <div class='numerical-info-cnt'>
-                                <div class='d-flex ps-4 pe-5 justify-content-between'>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
+                                <div class='info-cnt'>
+                                    <div class='py-4 ps-4'>
+                                        <button class='booked-btn m-0 me-3'>Booked</button>
+                                        <button class='panding-calender-btn'>Pending</button>
+                                        <h2 class='my-3 fs-3'>IOCL Recruitment Exam</h2>
+                                        <div class='d-flex'>
+                                            <h2 class='m-0 me-3 fs-6'>Nov 11th - 14th</h2>
+                                            <h2 class='m-0 fs-6'>50 days left</h2>
                                         </div>
                                     </div>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
+                                </div>
+                                <hr class='mt-0' />
+                                <div class='numerical-info-cnt'>
+                                    <div class='d-flex ps-4 pe-5 justify-content-between'>
+                                        <div class='d-flex align-items-center'>
+                                            <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>143</h2>
+                                                <p class='m-0'>Centers booked</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
+                                        <div class='d-flex align-items-center'>
+                                            <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>143</h2>
+                                                <p class='m-0'>Centers booked</p>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class='ps-4 pt-3'>
-                                    <div class='d-flex align-items-center'>
-                                        <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>143</h2>
-                                            <p class='m-0'>Centers booked</p>
+                                    </div>
+                                    <div class='ps-4 pt-3'>
+                                        <div class='d-flex align-items-center'>
+                                            <div><img src="./icon-folder/project-icons/calender.png" alt="" class='me-2' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>143</h2>
+                                                <p class='m-0'>Centers booked</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <hr />
-                            <div class='Description-cnt'>
-                                <div class='ps-4'>
-                                    <p>Description</p>
-                                </div>
-                                <div class='px-4'>
-                                    <p class='text-dark'>IOCL’s recruitment exam is carried out yearly. Every year over
-                                        100+ centers are booked across different cities to maintain availability and
-                                        support equal opportunity for all candidates across India.</p>
-                                </div>
-                            </div>
-                            <div class='mt-4'>
-                                <div class='ps-4'>
-                                    <p>Attachments</p>
-                                </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/center-profile.png" alt=""
-                                                class='me-3' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
-                                        </div>
+                                <hr />
+                                <div class='Description-cnt'>
+                                    <div class='ps-4'>
+                                        <p>Description</p>
                                     </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
+                                    <div class='px-4'>
+                                        <p class='text-dark'>IOCL’s recruitment exam is carried out yearly. Every year over
+                                            100+ centers are booked across different cities to maintain availability and
+                                            support equal opportunity for all candidates across India.</p>
                                     </div>
                                 </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/Audit-profile.png" alt=""
-                                                class='me-3' />
-                                        </div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
-                                        </div>
+                                <div class='mt-4'>
+                                    <div class='ps-4'>
+                                        <p>Attachments</p>
                                     </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
-                                    </div>
-                                </div>
-                                <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
-                                    <div class='d-flex'>
-                                        <div><img src="./icon-folder/project-icons/project-details.png" alt=""
-                                                class='me-3' />
+                                    <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
+                                        <div class='d-flex'>
+                                            <div><img src="./icon-folder/project-icons/center-profile.png" alt=""
+                                                    class='me-3' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>Center profiles</h2>
+                                                <p class='m-0'>Oct 6th, 2024</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h2 class='m-0'>Center profiles</h2>
-                                            <p class='m-0'>Oct 6th, 2024</p>
+                                        <div class='d-flex align-items-center'>
+                                            <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
+                                            <span>View</span>
                                         </div>
                                     </div>
-                                    <div class='d-flex align-items-center'>
-                                        <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
-                                        <span>View</span>
+                                    <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
+                                        <div class='d-flex'>
+                                            <div><img src="./icon-folder/project-icons/Audit-profile.png" alt=""
+                                                    class='me-3' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>Center profiles</h2>
+                                                <p class='m-0'>Oct 6th, 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex align-items-center'>
+                                            <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
+                                            <span>View</span>
+                                        </div>
                                     </div>
+                                    <div class='d-flex px-4 justify-content-between align-items-center mb-3'>
+                                        <div class='d-flex'>
+                                            <div><img src="./icon-folder/project-icons/project-details.png" alt=""
+                                                    class='me-3' />
+                                            </div>
+                                            <div>
+                                                <h2 class='m-0'>Center profiles</h2>
+                                                <p class='m-0'>Oct 6th, 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class='d-flex align-items-center'>
+                                            <img src="./icon-folder/project-icons/views-icon.png" alt="" class='me-2' />
+                                            <span>View</span>
+                                        </div>
 
-                                </div>
-                                <div class='px-4'>
-                                    <p class='m-0 pt-3'>Got an issue</p><br />
-                                    <input type="textarea" class='w-100 border rounded mb-4 px-3 py-2'
-                                        placeholder='Write your message here...' />
+                                    </div>
+                                    <div class='px-4'>
+                                        <p class='m-0 pt-3'>Got an issue</p><br />
+                                        <input type="textarea" class='w-100 border rounded mb-4 px-3 py-2'
+                                            placeholder='Write your message here...' />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1778,7 +1783,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class='notification-navbar'>
-                                    <button class='m-0 border-0'><img
+                                    <button class='m-0 border-0' id="backButton"><img
                                             src="./icon-folder/project-icons/previus-arrow.png" alt="" class="me-2">Back
                                         to projects</button>
                                     <div>
@@ -2043,7 +2048,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class='notification-navbar'>
-                                    <button class='m-0 border-0'><img
+                                    <button class='m-0 border-0' id="backButtonApprove"><img
                                             src="./icon-folder/project-icons/previus-arrow.png" alt="" class="me-2">Back
                                         to eligible centers</button>
                                     <div>
