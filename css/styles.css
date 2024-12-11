@@ -861,7 +861,7 @@ input[type="file"] {
 .aside-footer-cnt {
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 6px;
 }
 
 .aside-footer-cnt p {
@@ -1448,9 +1448,10 @@ th {
   background-color: #fff;
   box-shadow: -4px 0px 40px 0px #A29F9F3D;
   position: absolute;
-  /* top: 50%; */
-  /* right: 0; */
-  /* cursor: pointer; */
+  top: 50%; 
+  right: 0;
+  cursor: pointer; 
+  display: none;
 
 }
 
@@ -1521,5 +1522,25 @@ th {
   padding: 5px 10px;
   font-size: 14px;
   font-weight: 700;
+}
+.examCenterBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.examCenterBtn label{
+  color: #2A75AE;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.approveItemBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.approveItemBtn label{
+  color: #2A75AE;
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*//////////////////////////////////// Approved-page style end ////////////////////////////////// */
