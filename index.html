@@ -80,7 +80,7 @@
                 <a href='/'>Need help?</a>
             </div>
           </div>
-          <div class="create-account-cnt ">
+          <div class="create-account-cnt px-3">
             <!-- /////////////////login part//////////////// -->
             <form class="form-cnt section tab-content show">
               <div class="form-heading">
@@ -134,12 +134,12 @@
                 <p>We sent a 6 digit OTP to 9922345678</p>
               </div>
               <div class='form-input-otp-cnt'>
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
               </div>
               <div class="form-footer">
                 <p class='login-text'>Didn’t get a code?<a href="/">Resend</a></p>
@@ -155,10 +155,10 @@
                 <p>The M-Pin will be used for logging in in the future</p>
               </div>
               <div class='form-input-mpin-cnt'>
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
               </div>
               <div class="form-footer">
                 <button type="button" class='proceed-btn mt-3 nextFormBtn'>proceed <img src="./icon-folder/aside-icon/Arrow 3.png"
@@ -418,6 +418,25 @@
                     <div class="col-6">
                       <div class='bank-fileUpload-cnt'>
                         <div>
+                          <label for="file-input1" class="custom-file-label">
+                            <img src="./icon-folder/project-icons/Chooses-icon.png" alt="Upload Logo" />
+                            Choose File
+                          </label>
+                          <input type="file" id="file-input1" />
+                        </div>
+                        <div class='devider-line'></div>
+                        <div>
+                          <p>Max file size: 2 MB</p>
+                          <p>File type: doc, docx, pdf</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row py-2 align-items-center'>
+                    <div class="col-6"><label htmlFor="">Upload Agreement </label></div>
+                    <div class="col-6">
+                      <div class='bank-fileUpload-cnt'>
+                        <div>
                           <label for="file-input2" class="custom-file-label">
                             <img src="./icon-folder/project-icons/Chooses-icon.png" alt="Upload Logo" />
                             Choose File
@@ -433,7 +452,7 @@
                     </div>
                   </div>
                   <div class='row py-2 align-items-center'>
-                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6"><label htmlFor="">Upload MOU </label></div>
                     <div class="col-6">
                       <div class='bank-fileUpload-cnt'>
                         <div>
@@ -452,7 +471,7 @@
                     </div>
                   </div>
                   <div class='row py-2 align-items-center'>
-                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6"><label htmlFor="">Upload GST Certificate</label></div>
                     <div class="col-6">
                       <div class='bank-fileUpload-cnt'>
                         <div>
@@ -471,11 +490,11 @@
                     </div>
                   </div>
                   <div class='row py-2 align-items-center'>
-                    <div class="col-6"><label htmlFor="">Upload Canceled Cheque</label></div>
+                    <div class="col-6"><label htmlFor="">Upload Udyam Certificate</label></div>
                     <div class="col-6">
                       <div class='bank-fileUpload-cnt'>
                         <div>
-                          <label for="file-input5" class="custom-file-label">
+                          <label For="file-input5" class="custom-file-label">
                             <img src="./icon-folder/project-icons/Chooses-icon.png" alt="Upload Logo" />
                             Choose File
                           </label>
@@ -490,15 +509,15 @@
                     </div>
                   </div>
                   <div class='row py-2 align-items-center'>
-                    <div class="col-6"><label htmlFor="">Upload Udyam Certificate</label></div>
+                    <div class="col-6"><label htmlFor="">Upload PAN number</label></div>
                     <div class="col-6">
                       <div class='bank-fileUpload-cnt'>
                         <div>
-                          <label htmlFor="file-input6" class="custom-file-label">
+                          <label For="file-input5" class="custom-file-label">
                             <img src="./icon-folder/project-icons/Chooses-icon.png" alt="Upload Logo" />
                             Choose File
                           </label>
-                          <input type="file" id="file-input6" />
+                          <input type="file" id="file-input5" />
                         </div>
                         <div class='devider-line'></div>
                         <div>
@@ -508,6 +527,7 @@
                       </div>
                     </div>
                   </div>
+                  
                   <div class='row py-2 align-items-start'>
                     <div class="col-6"><label htmlFor="">Enter Udyam Aadhar number</label></div>
                     <div class="col-6"><input type="text" class='w-100 rounded input-bg py-1' /></div>

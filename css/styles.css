@@ -1440,7 +1440,7 @@ th {
   text-align: center;
 }
 
-/* ///////////////////////////////////My Calendar style end ///////////////////////////////*/
+/* /////////////////////////////////// My Calendar style end ///////////////////////////////*/
 
 
 /* pop-up section style start */
@@ -1453,6 +1453,7 @@ th {
   width: 100%;
   z-index: 999;
   display: none;
+  overflow: auto;
 }
 .main-share-cnt.show{
   display: block;
@@ -1472,6 +1473,7 @@ th {
 .main-share-cnt.show .main-share-wrapper{
   visibility: visible;
   transform: translateX(0);
+  overflow: auto;
 }
 .open-modal {
   margin-right: 460px;
