@@ -95,6 +95,8 @@ let backButtonApprove = document.getElementById("backButtonApprove");
 
 
 
+
+
 // Tab switching logic for table calendar
 tablecalenderTabs.forEach((element, index) => {
     element.addEventListener("click", () => {
@@ -199,3 +201,94 @@ backButtonApprove.addEventListener("click", function () {
     approveCnt.classList.remove("show")
     eligibleCnt.classList.add("show")
 });
+
+
+
+
+//////////////////////  pagination project table /////////
+
+document.addEventListener("DOMContentLoaded", function () {
+    function initializePagination(tableContainerSelector) {
+      const container = document.querySelector(tableContainerSelector);
+      if (!container) return; // Exit if the container doesn't exist
+
+      const table = container.querySelector("table");
+      if (!table) return; // Exit if no table found in the container
+
+      const rows = table.querySelectorAll("tbody tr");
+      const totalRows = rows.length;
+      const rowsPerPage = Math.min(5, totalRows); // Dynamically decide rows per page (max 5)
+      let currentPage = 1;
+      const totalPages = Math.ceil(totalRows / rowsPerPage);
+
+      const prevButton = container.querySelector(".pre-arrow-btn-cnt button");
+      const nextButton = container.querySelector(".next-arrow-btn-cnt button");
+      const pageButton = container.querySelector(".no-of-page-btn button");
+
+      function displayTableRows() {
+        rows.forEach((row, index) => {
+          row.style.display = "none"; // Hide all rows initially
+          if (index >= (currentPage - 1) * rowsPerPage && index < currentPage * rowsPerPage) {
+            row.style.display = ""; // Show only rows for the current page
+          }
+        });
+
+        pageButton.innerText = `Page ${currentPage} of ${totalPages}`;
+      }
+
+      function updatePaginationButtons() {
+        prevButton.disabled = currentPage === 1; // Disable "Previous" button if on the first page
+        nextButton.disabled = currentPage === totalPages; // Disable "Next" button if on the last page
+      }
+
+      prevButton.addEventListener("click", function () {
+        if (currentPage > 1) {
+          currentPage--;
+          displayTableRows();
+          updatePaginationButtons();
+        }
+      });
+
+      nextButton.addEventListener("click", function () {
+        if (currentPage < totalPages) {
+          currentPage++;
+          displayTableRows();
+          updatePaginationButtons();
+        }
+      });
+
+      // Initialize table rows display and buttons
+      displayTableRows();
+      updatePaginationButtons();
+    }
+
+    // Initialize pagination for all table containers with the class "table-cnt"
+    document.querySelectorAll(".table-cnt").forEach((container) => {
+      initializePagination(`#${container.id}`);
+    });
+});
+
+  
+
+///////////////////// Pagination second table.
+
+const settingTabBtn = document.querySelectorAll(".setting-tab");
+const settingProfile = document.querySelectorAll(".setting-my-profile-wrapper");
+// Tab switching logic for project table tabs
+settingTabBtn.forEach((element, index) => {
+    element.addEventListener("click", () => {
+        settingTabBtn.forEach(tab => tab.classList.remove("my-profile-btn"));
+        settingProfile.forEach(content => content.classList.remove("show"));
+
+        settingTabBtn[index].classList.add("my-profile-btn");
+        settingProfile[index].classList.add("show");
+    });
+});
+
+
+
+
+
+
+
+

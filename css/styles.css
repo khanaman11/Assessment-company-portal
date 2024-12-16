@@ -1564,3 +1564,46 @@ th {
   cursor: pointer;
 }
 /*//////////////////////////////////// Approved-page style end ////////////////////////////////// */
+
+/* setting page style start */
+.setting-my-profile-wrapper{
+  background: #F9FAFB;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+.setting-my-profile-wrapper.show{
+  display: block;
+}
+.setting-tab-container button{
+  border: none;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #737373;
+  padding: 10px 20px;
+}
+.my-profile-btn,.account-btn,.help-support-btn{
+  background: #E5EDF3 !important;
+  color: #2A75AE !important;
+
+}
+.log-out-btn{
+  background: #EA3636;
+  color: #fff;
+
+}
+.red-text{
+  margin: 0;
+  color: #FF0000;
+
+}
+.delete-btn{
+  background: #F9FAFB;
+  color: #EA3636;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  
+
+}
+/* setting page style start */
