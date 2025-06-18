@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
 }
+
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -802,7 +803,7 @@ input[type="file"] {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #737373;
   border-radius: 10px;
@@ -1195,7 +1196,8 @@ th {
   border-radius: 10px;
   width: 40%;
 }
-.approved-btn-Approved{
+
+.approved-btn-Approved {
   background: #CAFFBD;
   color: #3F892C;
   padding: 5px 10px;
@@ -1269,7 +1271,7 @@ th {
   margin-left: 10px;
 }
 
-/* /////////////////////////////////////table style end here //////////////////////////*/
+/* ///////////////////////////////////// table style end here //////////////////////////*/
 
 
 /* ////////////////////////// create project infobar style start ///////////////////////*/
@@ -1307,7 +1309,7 @@ th {
 
 /* //////////////////////////////////create project infobar style end /////////////////////// */
 
-/*/////////////////////////// first info detials section style start///////////////////////  */
+/*/////////////////////////// first info detials section style start ///////////////////////  */
 .main-projectDetials-enter-cnt {
   background-color: #F9FAFB;
   padding: 30px;
@@ -1455,26 +1457,30 @@ th {
   display: none;
   overflow: auto;
 }
-.main-share-cnt.show{
+
+.main-share-cnt.show {
   display: block;
 }
+
 .main-share-wrapper {
   max-width: 460px;
   background-color: #fff;
   box-shadow: -4px 0px 40px 0px #A29F9F3D;
   position: absolute;
-  top: 0; 
+  top: 0;
   right: 0;
-  cursor: pointer; 
+  cursor: pointer;
   visibility: hidden;
   transform: translateX(100%);
   transition: 5s all ease-in-out;
 }
-.main-share-cnt.show .main-share-wrapper{
+
+.main-share-cnt.show .main-share-wrapper {
   visibility: visible;
   transform: translateX(0);
   overflow: auto;
 }
+
 .open-modal {
   margin-right: 460px;
 }
@@ -1512,28 +1518,31 @@ th {
 
 
 /*//////////////////////////////////// Approved-page style start ////////////////////////////////// */
-.Approved-left-cnt{
+.Approved-left-cnt {
   background: #F9FAFB;
 
 }
-.Audit-history-cnt{
+
+.Audit-history-cnt {
   background: #F9FAFB;
   padding: 20px;
   border-radius: 10px;
 
 }
-.view-report-btn{
+
+.view-report-btn {
   border: none;
   border-radius: 10px;
   border: 1px solid #2A75AE;
   background: #FFFFFF;
-  color:#2A75AE;
+  color: #2A75AE;
   padding: 5px 10px;
   font-size: 14px;
   font-weight: 700;
 
 }
-.view-location-btn{
+
+.view-location-btn {
   border: none;
   border-radius: 10px;
   border: 1px solid #F9822C;
@@ -1543,67 +1552,202 @@ th {
   font-size: 14px;
   font-weight: 700;
 }
-.examCenterBtn{
+
+.examCenterBtn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.examCenterBtn label{
+
+.examCenterBtn label {
   color: #2A75AE;
   text-decoration: underline;
   cursor: pointer;
 }
-.approveItemBtn{
+
+.approveItemBtn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.approveItemBtn label{
+
+.approveItemBtn label {
   color: #2A75AE;
   text-decoration: underline;
   cursor: pointer;
 }
+
 /*//////////////////////////////////// Approved-page style end ////////////////////////////////// */
 
 /* setting page style start */
-.setting-my-profile-wrapper{
+.setting-my-profile-wrapper {
   background: #F9FAFB;
   padding: 20px;
   border-radius: 10px;
   display: none;
 }
-.setting-my-profile-wrapper.show{
+
+.setting-my-profile-wrapper.show {
   display: block;
 }
-.setting-tab-container button{
+
+.setting-tab-container button {
   border: none;
   border-radius: 10px;
   background: #FFFFFF;
   color: #737373;
   padding: 10px 20px;
 }
-.my-profile-btn,.account-btn,.help-support-btn{
+
+.my-profile-btn,
+.account-btn,
+.help-support-btn {
   background: #E5EDF3 !important;
   color: #2A75AE !important;
 
 }
-.log-out-btn{
+
+.log-out-btn {
   background: #EA3636;
   color: #fff;
 
 }
-.red-text{
+
+.red-text {
   margin: 0;
   color: #FF0000;
 
 }
-.delete-btn{
+
+.delete-btn {
   background: #F9FAFB;
   color: #EA3636;
   display: flex;
   align-items: center;
   font-weight: 700;
-  
+
 
 }
-/* setting page style start */
+
+
+/* setting page style end */
+
+
+/* dout click pr open popup style start */
+.form-label {
+  width: 40%;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+
+}
+
+.form-control {
+  width: 60%;
+  margin-left: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  justify-content: space-between;
+}
+
+.offcanvas-body form h3 {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: left !important;
+  margin-top: 36px;
+  margin-bottom: 24px;
+
+}
+
+
+.option-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 10px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.option-box input {
+  margin-right: 6px;
+  accent-color: #0d6efd;
+
+}
+
+.option-container {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+}
+
+.footage-box {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.requirement-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #f3f4f6;
+  margin-bottom: 16px;
+}
+
+.requirement-card label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.requirement-card .title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 6px 12px;
+  color: #111827;
+  width: 100%;
+  max-width: 200px;
+}
+
+.popup-img {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.popup-img:hover {
+  transform: scale(1.05);
+}
+
+.offcanvas-header {
+  background: #F9FAFB;
+
+}

@@ -209,66 +209,66 @@ backButtonApprove.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     function initializePagination(tableContainerSelector) {
-      const container = document.querySelector(tableContainerSelector);
-      if (!container) return; // Exit if the container doesn't exist
+        const container = document.querySelector(tableContainerSelector);
+        if (!container) return; // Exit if the container doesn't exist
 
-      const table = container.querySelector("table");
-      if (!table) return; // Exit if no table found in the container
+        const table = container.querySelector("table");
+        if (!table) return; // Exit if no table found in the container
 
-      const rows = table.querySelectorAll("tbody tr");
-      const totalRows = rows.length;
-      const rowsPerPage = Math.min(5, totalRows); // Dynamically decide rows per page (max 5)
-      let currentPage = 1;
-      const totalPages = Math.ceil(totalRows / rowsPerPage);
+        const rows = table.querySelectorAll("tbody tr");
+        const totalRows = rows.length;
+        const rowsPerPage = Math.min(5, totalRows); // Dynamically decide rows per page (max 5)
+        let currentPage = 1;
+        const totalPages = Math.ceil(totalRows / rowsPerPage);
 
-      const prevButton = container.querySelector(".pre-arrow-btn-cnt button");
-      const nextButton = container.querySelector(".next-arrow-btn-cnt button");
-      const pageButton = container.querySelector(".no-of-page-btn button");
+        const prevButton = container.querySelector(".pre-arrow-btn-cnt button");
+        const nextButton = container.querySelector(".next-arrow-btn-cnt button");
+        const pageButton = container.querySelector(".no-of-page-btn button");
 
-      function displayTableRows() {
-        rows.forEach((row, index) => {
-          row.style.display = "none"; // Hide all rows initially
-          if (index >= (currentPage - 1) * rowsPerPage && index < currentPage * rowsPerPage) {
-            row.style.display = ""; // Show only rows for the current page
-          }
+        function displayTableRows() {
+            rows.forEach((row, index) => {
+                row.style.display = "none"; // Hide all rows initially
+                if (index >= (currentPage - 1) * rowsPerPage && index < currentPage * rowsPerPage) {
+                    row.style.display = ""; // Show only rows for the current page
+                }
+            });
+
+            pageButton.innerText = `Page ${currentPage} of ${totalPages}`;
+        }
+
+        function updatePaginationButtons() {
+            prevButton.disabled = currentPage === 1; // Disable "Previous" button if on the first page
+            nextButton.disabled = currentPage === totalPages; // Disable "Next" button if on the last page
+        }
+
+        prevButton.addEventListener("click", function () {
+            if (currentPage > 1) {
+                currentPage--;
+                displayTableRows();
+                updatePaginationButtons();
+            }
         });
 
-        pageButton.innerText = `Page ${currentPage} of ${totalPages}`;
-      }
+        nextButton.addEventListener("click", function () {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayTableRows();
+                updatePaginationButtons();
+            }
+        });
 
-      function updatePaginationButtons() {
-        prevButton.disabled = currentPage === 1; // Disable "Previous" button if on the first page
-        nextButton.disabled = currentPage === totalPages; // Disable "Next" button if on the last page
-      }
-
-      prevButton.addEventListener("click", function () {
-        if (currentPage > 1) {
-          currentPage--;
-          displayTableRows();
-          updatePaginationButtons();
-        }
-      });
-
-      nextButton.addEventListener("click", function () {
-        if (currentPage < totalPages) {
-          currentPage++;
-          displayTableRows();
-          updatePaginationButtons();
-        }
-      });
-
-      // Initialize table rows display and buttons
-      displayTableRows();
-      updatePaginationButtons();
+        // Initialize table rows display and buttons
+        displayTableRows();
+        updatePaginationButtons();
     }
 
     // Initialize pagination for all table containers with the class "table-cnt"
     document.querySelectorAll(".table-cnt").forEach((container) => {
-      initializePagination(`#${container.id}`);
+        initializePagination(`#${container.id}`);
     });
 });
 
-  
+
 
 ///////////////////// Pagination second table.
 
@@ -284,6 +284,116 @@ settingTabBtn.forEach((element, index) => {
         settingProfile[index].classList.add("show");
     });
 });
+
+
+
+// Edit script for setting page
+
+document.addEventListener('DOMContentLoaded', function () {
+    const profileEditBtn = document.querySelector('.company-logo-setting-page button');
+    const profileImage = document.querySelector('.company-logo-setting-page img');
+
+    profileEditBtn.addEventListener('click', function () {
+        const isEditing = profileEditBtn.textContent === 'Edit';
+
+        if (isEditing) {
+            // Change button text to Save
+            profileEditBtn.textContent = 'Save';
+
+            // Make text editable
+            const textElements = document.querySelectorAll('.company-logo-setting-page h2, .company-logo-setting-page p');
+            textElements.forEach(el => {
+                el.setAttribute('contenteditable', 'true');
+                el.style.backgroundColor = '#fff9c4'; // light yellow
+                el.style.border = '1px dashed #fbc02d';
+            });
+
+            // Create hidden file input if not exists
+            let fileInput = document.getElementById('profile-image-input');
+            if (!fileInput) {
+                fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.accept = 'image/*';
+                fileInput.id = 'profile-image-input';
+                fileInput.style.display = 'none';
+                document.body.appendChild(fileInput);
+
+                fileInput.addEventListener('change', function (event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            profileImage.src = e.target.result;
+                            profileImage.style.border = '2px dashed #4caf50'; // green highlight
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
+
+            fileInput.click(); // trigger file picker
+        } else {
+            // Change button text back to Edit
+            profileEditBtn.textContent = 'Edit';
+
+            // Turn off editable mode
+            const textElements = document.querySelectorAll('.company-logo-setting-page h2, .company-logo-setting-page p');
+            textElements.forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.style.backgroundColor = '';
+                el.style.border = '';
+            });
+
+            // Optionally, you can save the updated text here (e.g., send to backend)
+            alert('Changes saved successfully!');
+        }
+    });
+
+    document.querySelector('.company-information-setting-page button').addEventListener('click', function (e) {
+        toggleEditButton(e.target, '.company-information-setting-page h3');
+    });
+
+    document.querySelector('.Personal-Information-setting-page button').addEventListener('click', function (e) {
+        toggleEditButton(e.target, '.Personal-Information-setting-page h3');
+    });
+
+    function toggleEditButton(button, selector) {
+        const isEditing = button.textContent === 'Edit';
+        if (isEditing) {
+            button.textContent = 'Save';
+            makeEditable(selector);
+        } else {
+            button.textContent = 'Edit';
+            removeEditable(selector);
+            alert('Changes saved successfully!');
+        }
+    }
+
+    function makeEditable(selector) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+            el.setAttribute('contenteditable', 'true');
+            el.style.backgroundColor = '#fff9c4';
+            el.style.border = '1px dashed #fbc02d';
+        });
+    }
+
+    function removeEditable(selector) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+            el.removeAttribute('contenteditable');
+            el.style.backgroundColor = '';
+            el.style.border = '';
+        });
+    }
+});
+
+
+
+
+
+
+
 
 
 
